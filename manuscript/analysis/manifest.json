@@ -1,0 +1,19 @@
+{
+  "analysis_script_sha256": "a80cf055ea67f3e956fdc88cf785998d3764d489d03b921f87e1cc1d455fc916",
+  "bootstrap_replicates": 2000,
+  "frozen_result_manifest_sha256": "ba9c4c4c3e3b451a6e6300125256d2d5bb6f73214779432dd919782515f8e040",
+  "gate_outcomes_used": false,
+  "output_sha256": {
+    "avi_context_rank_contrasts.tsv": "3f1fe11ce8782e9c2e8f859b9446cf6840905a74e3a5d981237824ce95842164",
+    "avi_context_rank_groups.tsv": "2ef03c6665b75b0be3ee0a68174b558bf31053622119cc1f529cf589b7ce7046",
+    "budget_precision_bootstrap_draws.tsv.gz": "b7518424ebf87f7a0554131d652427d4f25cb4c9d2670d869bac5bcf8675359b",
+    "budget_precision_contrasts.tsv": "5748fc1981c276e25d3be816befafe6ad6c9e79d3399c5743dfeb6797078996a",
+    "integrity_audit.json": "8d61e364167c307b37bd6fe26e0b54c2efd62a72230d4a2fe46ebe751989259e",
+    "manuscript_analysis_summary.json": "dae55d03a52d211e2bc32e2d99ba6d6bc1601a33724187d7e242cfdda295ff6b",
+    "ranking_metrics.tsv": "e18047bbf3848c409ea916cde0268816a6ba36266955e4cefebce1bf614c7164",
+    "selective_risk_contrasts.tsv": "a83a8cf1e37bdce827e017267562d093d0d80e97e1d1d31f020c846ef1fa4a9e",
+    "selective_risk_intervals.tsv": "e8d957d9de446f0b117f38c52f0df4adedc865c027e2854af5e2588ac384f750",
+    "uncertainty_indicator_models.tsv": "05b26df66dd51735a0abef75c4b8190f6ebb817690776aaaa8ba4d503c4e0159"
+  },
+  "scientific_rules_mutated": false
+}

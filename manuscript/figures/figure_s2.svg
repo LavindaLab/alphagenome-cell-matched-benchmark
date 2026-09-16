@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="540" height="610" preserveAspectRatio="xMinYMin meet" viewBox="0 0 540 610" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="540" height="610"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-610)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="25" y="582" style="font-family: Helvetica-Bold; font-size: 13px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1164) scale(1,-1)">Supplementary Figure S2. Dependence sensitivity</text>
+			<text x="25" y="545" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1090) scale(1,-1)">A</text>
+			<text x="43" y="545" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1090) scale(1,-1)">Cell-matched - AVI precision by block size</text>
+			<text x="55.878" y="488" style="font-family: Helvetica; font-size: 7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,976) scale(1,-1)">96 slots</text>
+			<path d="M 358.198545,497 L 478.344883,497 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<circle cx="420.0757575757575" cy="497" r="2.5" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<path d="M 357.23116,483 L 476.717112,483 Z" style="stroke: rgb(85%,47%,16%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<circle cx="420.0757575757575" cy="483" r="2.5" style="stroke: rgb(85%,47%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,47%,16%); fill-rule: evenodd;"/>
+			<text x="51.986000000000004" y="408" style="font-family: Helvetica; font-size: 7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,816) scale(1,-1)">384 slots</text>
+			<path d="M 266.792742,417 L 327.069903,417 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<circle cx="297.4431818181818" cy="417" r="2.5" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<path d="M 267.184633,403 L 328.635456,403 Z" style="stroke: rgb(85%,47%,16%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<circle cx="297.4431818181818" cy="403" r="2.5" style="stroke: rgb(85%,47%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,47%,16%); fill-rule: evenodd;"/>
+			<text x="48.094" y="328" style="font-family: Helvetica; font-size: 7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,656) scale(1,-1)">1000 slots</text>
+			<path d="M 259.038561,337 L 295.067958,337 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<circle cx="276.9090909090909" cy="337" r="2.5" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<path d="M 259.732,323 L 295.907871,323 Z" style="stroke: rgb(85%,47%,16%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<circle cx="276.9090909090909" cy="323" r="2.5" style="stroke: rgb(85%,47%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,47%,16%); fill-rule: evenodd;"/>
+			<text x="48.094" y="248" style="font-family: Helvetica; font-size: 7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,496) scale(1,-1)">5000 slots</text>
+			<path d="M 185.109638,257 L 197.196681,257 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<circle cx="191.12727272727273" cy="257" r="2.5" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<path d="M 184.807692,243 L 197.681082,243 Z" style="stroke: rgb(85%,47%,16%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<circle cx="191.12727272727273" cy="243" r="2.5" style="stroke: rgb(85%,47%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,47%,16%); fill-rule: evenodd;"/>
+			<path d="M 100,165 L 500,165 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 100,165 L 100,162 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="95.4825" y="151" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,302) scale(1,-1)">0.0</text>
+			<path d="M 172.727273,165 L 172.727273,162 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="168.20977272727274" y="151" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,302) scale(1,-1)">0.1</text>
+			<path d="M 245.454545,165 L 245.454545,162 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="240.93704545454545" y="151" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,302) scale(1,-1)">0.2</text>
+			<path d="M 318.181818,165 L 318.181818,162 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="313.66431818181826" y="151" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,302) scale(1,-1)">0.3</text>
+			<path d="M 390.909091,165 L 390.909091,162 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="386.39159090909095" y="151" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,302) scale(1,-1)">0.4</text>
+			<path d="M 463.636364,165 L 463.636364,162 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="459.11886363636364" y="151" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,302) scale(1,-1)">0.5</text>
+			<path d="M 120,120 L 135,120 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="140" y="117" style="font-family: Helvetica; font-size: 7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,234) scale(1,-1)">1 Mb</text>
+			<path d="M 220,120 L 235,120 Z" style="stroke: rgb(85%,47%,16%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="240" y="117" style="font-family: Helvetica; font-size: 7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,234) scale(1,-1)">5 Mb</text>
+			<text x="169.948" y="85" style="font-family: Helvetica; font-size: 8px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,170) scale(1,-1)">Nearly identical intervals show robustness to wider genomic dependence.</text>
+		</g>
+	</g>
+</svg>

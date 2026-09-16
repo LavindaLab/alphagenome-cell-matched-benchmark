@@ -1,0 +1,61 @@
+{
+  "avi_is_signed": false,
+  "avi_track_metadata": [
+    {
+      "name": "AVI_SCORE",
+      "strand": ".",
+      "track_index": "0"
+    }
+  ],
+  "frozen_track_pairs_match_pilot": true,
+  "mpra_functional_outcomes_accessed": false,
+  "retrieved_utc": "2026-09-13T21:10:40.454490+00:00",
+  "sdk_commit": "aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d",
+  "sdk_version": "0.9.0",
+  "track_pairs": {
+    "DNASE": [
+      [
+        "EFO:0001086",
+        "107"
+      ],
+      [
+        "EFO:0001187",
+        "109"
+      ],
+      [
+        "EFO:0002067",
+        "118"
+      ],
+      [
+        "EFO:0002824",
+        "146"
+      ],
+      [
+        "EFO:0003072",
+        "153"
+      ]
+    ],
+    "H3K27ac": [
+      [
+        "EFO:0001086",
+        "328"
+      ],
+      [
+        "EFO:0001187",
+        "338"
+      ],
+      [
+        "EFO:0002067",
+        "392"
+      ],
+      [
+        "EFO:0002824",
+        "465"
+      ],
+      [
+        "EFO:0003072",
+        "511"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "classification_counts": {
+    "distal": 213004,
+    "promoter_proximal": 33670
+  },
+  "confirmation_mpra_outcomes_accessed": false,
+  "definition": "promoter-proximal if within 2,000 bp of any GENCODE 50 protein-coding transcript TSS; distal otherwise",
+  "gencode_release": "50",
+  "gencode_sha256": "83fba3e9b03f0b8c958f3595c6c350adc55f468abf8b0e47b6d5284cfe13a453",
+  "generated_utc": "2026-09-13T21:24:49.337980+00:00",
+  "manifest_sha256": "10761f6ef1f4c46f31175fbdcdaf3f119943a7c6fb9a951864d6c4766ff986a1",
+  "output_sha256": "62f1d96b04d30a58578120b46ac17cf4ef844c13c2937d101a1591620b334125",
+  "purpose": "prespecified secondary experimental-budget balance only",
+  "scientific_rules_mutated": false,
+  "variants": 246674
+}

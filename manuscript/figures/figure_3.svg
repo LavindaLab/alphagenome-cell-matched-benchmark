@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="540" height="610" preserveAspectRatio="xMinYMin meet" viewBox="0 0 540 610" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="540" height="610"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-610)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="25" y="582" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1164) scale(1,-1)">Disagreement is informative, but concordance is not a better ranking rule</text>
+			<text x="25" y="548" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1096) scale(1,-1)">A</text>
+			<text x="43" y="548" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1096) scale(1,-1)">Top-10% rank discordance separates MPRA yield</text>
+			<path d="M 70,355 L 70,515 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 70,355 L 490,355 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 70,355 L 490,355 Z" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="61.386" y="352.5" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,705) scale(1,-1)">0</text>
+			<path d="M 70,388.333333 L 490,388.333333 Z" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="52.351" y="385.8333333333333" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,771) scale(1,-1)">0.05</text>
+			<path d="M 70,421.666667 L 490,421.666667 Z" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="55.965" y="419.1666666666667" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,838) scale(1,-1)">0.1</text>
+			<path d="M 70,455 L 490,455 Z" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="52.351" y="452.5" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,905) scale(1,-1)">0.15</text>
+			<path d="M 70,488.333333 L 490,488.333333 Z" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="55.965" y="485.83333333333337" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,971) scale(1,-1)">0.2</text>
+			<text x="7.600999999999999" y="435.0" style="font-family: Helvetica; font-size: 7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,870) scale(1,-1)">emVar prevalence</text>
+			<rect x="106.5" y="355" width="12.0" height="98.68635649260148" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<path d="M 112.5,449.160497 L 112.5,458.206932 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<rect x="126.5" y="355" width="12.0" height="47.089523470628365" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,47%,16%); fill-rule: evenodd;"/>
+			<path d="M 132.5,399.074201 L 132.5,405.248508 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="111.8872" y="342" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,684) scale(1,-1)">HepG2</text>
+			<rect x="211.5" y="355" width="12.0" height="139.22702811591705" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<path d="M 217.5,489.166192 L 217.5,499.104483 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<rect x="231.5" y="355" width="12.0" height="41.958041958041974" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,47%,16%); fill-rule: evenodd;"/>
+			<path d="M 237.5,393.954701 L 237.5,400.049829 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="219.67775" y="342" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,684) scale(1,-1)">K562</text>
+			<rect x="316.5" y="355" width="12.0" height="73.72153788727138" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<path d="M 322.5,423.534094 L 322.5,433.595756 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<rect x="336.5" y="355" width="12.0" height="27.342291899962675" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,47%,16%); fill-rule: evenodd;"/>
+			<path d="M 342.5,379.211432 L 342.5,385.54225 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="320.02795" y="342" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,684) scale(1,-1)">HCT116</text>
+			<rect x="421.5" y="355" width="12.0" height="80.56704833381445" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<path d="M 427.5,431.244706 L 427.5,439.658385 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<rect x="441.5" y="355" width="12.0" height="52.34292312133164" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,47%,16%); fill-rule: evenodd;"/>
+			<path d="M 447.5,403.988851 L 447.5,410.622338 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="423.72815" y="342" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,684) scale(1,-1)">SK-N-SH</text>
+			<rect x="180" y="329" width="10" height="7" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<text x="195" y="329" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,658) scale(1,-1)">Cell-matched only</text>
+			<rect x="290" y="329" width="10" height="7" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,47%,16%); fill-rule: evenodd;"/>
+			<text x="305" y="329" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,658) scale(1,-1)">AVI only</text>
+			<text x="25" y="292" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,584) scale(1,-1)">B</text>
+			<text x="43" y="292" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,584) scale(1,-1)">Cell-matched-only minus AVI-only prevalence</text>
+			<path d="M 100,110 L 260,110 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 100,110 L 100,260 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 0.7; stroke-dasharray: 2, 2;"/>
+			<path d="M 100,110 L 100,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="93.9674" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">0.00</text>
+			<path d="M 140,110 L 140,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="133.9674" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">0.04</text>
+			<path d="M 180,110 L 180,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="173.9674" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">0.09</text>
+			<path d="M 220,110 L 220,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="213.9674" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">0.14</text>
+			<path d="M 260,110 L 260,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="253.9674" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">0.18</text>
+			<path d="M 161.429777,245 L 176.274715,245 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 161.429777,243 L 161.429777,247 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 176.274715,243 L 176.274715,247 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="168.79577736263087" cy="245.0" r="2.6" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<text x="72.7744" y="242.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,485) scale(1,-1)">HepG2</text>
+			<path d="M 221.758372,215 L 237.464029,215 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 221.758372,213 L 221.758372,217 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 237.464029,213 L 237.464029,217 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="229.6919815438334" cy="215.0" r="2.6" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<text x="78.3555" y="212.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,425) scale(1,-1)">K562</text>
+			<path d="M 153.888442,185 L 169.574091,185 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 153.888442,183 L 153.888442,187 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 169.574091,183 L 169.574091,187 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="161.83899464974493" cy="185.0" r="2.6" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<text x="69.05590000000001" y="182.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,365) scale(1,-1)">HCT116</text>
+			<path d="M 130.548419,155 L 144.356432,155 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 130.548419,153 L 130.548419,157 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 144.356432,153 L 144.356432,157 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="137.632166949977" cy="155.0" r="2.6" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<text x="66.4563" y="152.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,305) scale(1,-1)">SK-N-SH</text>
+			<path d="M 169.658528,125 L 179.24163,125 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 169.658528,123 L 169.658528,127 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 179.24163,123 L 179.24163,127 Z" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="174.48973012654653" cy="125.0" r="2.6" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,27%,41%); fill-rule: evenodd;"/>
+			<text x="75.3874" y="122.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,245) scale(1,-1)">Macro</text>
+			<text x="146.1515" y="88" style="font-family: Helvetica; font-size: 7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,176) scale(1,-1)">Prevalence difference</text>
+			<text x="285" y="292" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,584) scale(1,-1)">C</text>
+			<text x="303" y="292" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,584) scale(1,-1)">Prespecified concordance hypothesis</text>
+			<path d="M 370,110 L 515,110 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 434.444444,110 L 434.444444,260 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 0.7; stroke-dasharray: 2, 2;"/>
+			<path d="M 370,110 L 370,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="362.9351" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">-0.02</text>
+			<path d="M 406.25,110 L 406.25,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="399.1851" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">-0.01</text>
+			<path d="M 442.5,110 L 442.5,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="436.4674" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">0.00</text>
+			<path d="M 478.75,110 L 478.75,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="472.7174" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">0.01</text>
+			<path d="M 515,110 L 515,107 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="508.9674" y="98" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,196) scale(1,-1)">0.03</text>
+			<path d="M 406.065048,245 L 465.184936,245 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 406.065048,243 L 406.065048,247 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 465.184936,243 L 465.184936,247 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="439.3827160493827" cy="245.0" r="2.6" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,29%,29%); fill-rule: evenodd;"/>
+			<text x="342.7744" y="242.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,485) scale(1,-1)">HepG2</text>
+			<path d="M 415.971632,215 L 463.327581,215 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 415.971632,213 L 415.971632,217 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 463.327581,213 L 463.327581,217 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="440.55871811090026" cy="215.0" r="2.6" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,29%,29%); fill-rule: evenodd;"/>
+			<text x="348.3555" y="212.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,425) scale(1,-1)">K562</text>
+			<path d="M 418.251694,185 L 487.274286,185 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 418.251694,183 L 418.251694,187 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 487.274286,183 L 487.274286,187 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="456.4016657202347" cy="185.0" r="2.6" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,29%,29%); fill-rule: evenodd;"/>
+			<text x="339.0559" y="182.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,365) scale(1,-1)">HCT116</text>
+			<path d="M 434.444444,155 L 533.705805,155 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 434.444444,153 L 434.444444,157 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 533.705805,153 L 533.705805,157 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="483.5850883563302" cy="155.0" r="2.6" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,29%,29%); fill-rule: evenodd;"/>
+			<text x="336.4563" y="152.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,305) scale(1,-1)">SK-N-SH</text>
+			<path d="M 433.159896,125 L 472.08512,125 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 433.159896,123 L 433.159896,127 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 472.08512,123 L 472.08512,127 Z" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<circle cx="454.98204705921194" cy="125.0" r="2.6" style="stroke: rgb(69%,29%,29%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,29%,29%); fill-rule: evenodd;"/>
+			<text x="345.3874" y="122.5" style="font-family: Helvetica; font-size: 6.7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,245) scale(1,-1)">Macro</text>
+			<text x="410.101" y="88" style="font-family: Helvetica; font-size: 7px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,176) scale(1,-1)">Sign-error difference</text>
+			<text x="25" y="66" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,132) scale(1,-1)">D</text>
+			<text x="43" y="66" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,132) scale(1,-1)">Agreement marks emVar enrichment</text>
+			<text x="44.704" y="43" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,86) scale(1,-1)">HepG2</text>
+			<text x="42.489999999999995" y="25" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(16%,61%,56%); stroke:none;" transform="translate(0,50) scale(1,-1)">1.78x</text>
+			<text x="147.41125" y="43" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,86) scale(1,-1)">K562</text>
+			<text x="142.49" y="25" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(16%,61%,56%); stroke:none;" transform="translate(0,50) scale(1,-1)">1.82x</text>
+			<text x="242.90025" y="43" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,86) scale(1,-1)">HCT116</text>
+			<text x="242.49" y="25" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(16%,61%,56%); stroke:none;" transform="translate(0,50) scale(1,-1)">1.74x</text>
+			<text x="341.63925" y="43" style="font-family: Helvetica; font-size: 6.5px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,86) scale(1,-1)">SK-N-SH</text>
+			<text x="342.49" y="25" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(16%,61%,56%); stroke:none;" transform="translate(0,50) scale(1,-1)">1.41x</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,252 @@
+{
+  "a549_role": "descriptive_count_rule_downgrade",
+  "analysis_role": "post-confirmation manuscript characterization; not a new confirmatory analysis",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20260914,
+  "confirmation_cells": [
+    "HepG2",
+    "K562",
+    "HCT116",
+    "SK-N-SH"
+  ],
+  "fixed_budgets": [
+    96,
+    384,
+    1000,
+    5000
+  ],
+  "fixed_coverages": [
+    0.01,
+    0.05,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "frozen_primary": {
+    "a549_role": "descriptive_count_rule_downgrade",
+    "agreement_emvar_prevalence_ratio_by_confirmation_cell": {
+      "HCT116": 1.702788997101796,
+      "HepG2": 1.7281483374424143,
+      "K562": 1.758976726174683,
+      "SK-N-SH": 1.3866492388253524
+    },
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260913,
+    "confirmation_cells": [
+      "HepG2",
+      "K562",
+      "HCT116",
+      "SK-N-SH"
+    ],
+    "five_cell_descriptive_macro_difference": 0.0033212132162334694,
+    "generated_utc": "2026-09-14T01:57:15.434372+00:00",
+    "import_counts": {
+      "avi": 246674,
+      "features": 1233370,
+      "metadata": 246674,
+      "outcomes": 989052,
+      "regions": 246674
+    },
+    "primary_1mb_bootstrap_95_ci": [
+      -0.00039865311196734155,
+      0.011681588997589238
+    ],
+    "primary_5mb_bootstrap_95_ci": [
+      -3.672858573188446e-05,
+      0.011152958144301105
+    ],
+    "primary_counts_by_cell": {
+      "A549": 2249,
+      "HCT116": 5866,
+      "HepG2": 13045,
+      "K562": 15809,
+      "SK-N-SH": 13762
+    },
+    "primary_estimand": "four-cell macro mean sign-error(concordant)-sign-error(magnitude) at 10% coverage among noncoding enhancer-active emVars",
+    "primary_macro_difference": 0.006373738742514058,
+    "qualitative_value_gate_pending": true,
+    "quantitative_value_screens": {
+      "A_experimental_utility": true,
+      "B_concordance_policy": false,
+      "C_marker_policy_distinction": true
+    },
+    "scientific_rules_mutated": false,
+    "utility_screens": {
+      "1000": {
+        "absolute_difference": 0.24324999999999997,
+        "avi_macro_precision": 0.31925000000000003,
+        "cells_favoring_magnitude": 4,
+        "magnitude_macro_precision": 0.5625,
+        "relative_gain": 0.7619420516836333
+      },
+      "384": {
+        "absolute_difference": 0.271484375,
+        "avi_macro_precision": 0.37630208333333337,
+        "cells_favoring_magnitude": 4,
+        "magnitude_macro_precision": 0.6477864583333334,
+        "relative_gain": 0.7214532871972317
+      }
+    }
+  },
+  "gate_outcomes_used": false,
+  "magnitude_minus_avi": {
+    "1000": {
+      "five_mb": {
+        "additional_hits": 973,
+        "block_size": 5000000,
+        "budget": 1000,
+        "cell_context": "confirmation_macro",
+        "ci95_high": 0.26937332204123615,
+        "ci95_low": 0.21963149984296784,
+        "comparator": "avi",
+        "comparator_hits": 1277,
+        "comparator_precision": 0.31925000000000003,
+        "confirmation_role": "confirmatory_macro",
+        "magnitude_hits": 2250,
+        "magnitude_precision": 0.5625,
+        "precision_difference": 0.24324999999999997
+      },
+      "one_mb": {
+        "additional_hits": 973,
+        "block_size": 1000000,
+        "budget": 1000,
+        "cell_context": "confirmation_macro",
+        "ci95_high": 0.2682184419789291,
+        "ci95_low": 0.21867802087924407,
+        "comparator": "avi",
+        "comparator_hits": 1277,
+        "comparator_precision": 0.31925000000000003,
+        "confirmation_role": "confirmatory_macro",
+        "magnitude_hits": 2250,
+        "magnitude_precision": 0.5625,
+        "precision_difference": 0.24324999999999997
+      }
+    },
+    "384": {
+      "five_mb": {
+        "additional_hits": 417,
+        "block_size": 5000000,
+        "budget": 384,
+        "cell_context": "confirmation_macro",
+        "ci95_high": 0.31437375222921754,
+        "ci95_low": 0.22987887034618176,
+        "comparator": "avi",
+        "comparator_hits": 578,
+        "comparator_precision": 0.37630208333333337,
+        "confirmation_role": "confirmatory_macro",
+        "magnitude_hits": 995,
+        "magnitude_precision": 0.6477864583333334,
+        "precision_difference": 0.271484375
+      },
+      "one_mb": {
+        "additional_hits": 417,
+        "block_size": 1000000,
+        "budget": 384,
+        "cell_context": "confirmation_macro",
+        "ci95_high": 0.31222111594203505,
+        "ci95_low": 0.22934001956744113,
+        "comparator": "avi",
+        "comparator_hits": 578,
+        "comparator_precision": 0.37630208333333337,
+        "confirmation_role": "confirmatory_macro",
+        "magnitude_hits": 995,
+        "magnitude_precision": 0.6477864583333334,
+        "precision_difference": 0.271484375
+      }
+    },
+    "5000": {
+      "five_mb": {
+        "additional_hits": 2506,
+        "block_size": 5000000,
+        "budget": 5000,
+        "cell_context": "confirmation_macro",
+        "ci95_high": 0.13431148834639814,
+        "ci95_low": 0.11661057596700054,
+        "comparator": "avi",
+        "comparator_hits": 4584,
+        "comparator_precision": 0.22920000000000001,
+        "confirmation_role": "confirmatory_macro",
+        "magnitude_hits": 7090,
+        "magnitude_precision": 0.3545,
+        "precision_difference": 0.1253
+      },
+      "one_mb": {
+        "additional_hits": 2506,
+        "block_size": 1000000,
+        "budget": 5000,
+        "cell_context": "confirmation_macro",
+        "ci95_high": 0.1336454370465791,
+        "ci95_low": 0.11702575283743373,
+        "comparator": "avi",
+        "comparator_hits": 4584,
+        "comparator_precision": 0.22920000000000001,
+        "confirmation_role": "confirmatory_macro",
+        "magnitude_hits": 7090,
+        "magnitude_precision": 0.3545,
+        "precision_difference": 0.1253
+      }
+    },
+    "96": {
+      "five_mb": {
+        "additional_hits": 169,
+        "block_size": 5000000,
+        "budget": 96,
+        "cell_context": "confirmation_macro",
+        "ci95_high": 0.5179860291095328,
+        "ci95_low": 0.35369284446514426,
+        "comparator": "avi",
+        "comparator_hits": 118,
+        "comparator_precision": 0.30729166666666663,
+        "confirmation_role": "confirmatory_macro",
+        "magnitude_hits": 287,
+        "magnitude_precision": 0.7473958333333333,
+        "precision_difference": 0.44010416666666663
+      },
+      "one_mb": {
+        "additional_hits": 169,
+        "block_size": 1000000,
+        "budget": 96,
+        "cell_context": "confirmation_macro",
+        "ci95_high": 0.520224214636031,
+        "ci95_low": 0.3550229997783234,
+        "comparator": "avi",
+        "comparator_hits": 118,
+        "comparator_precision": 0.30729166666666663,
+        "confirmation_role": "confirmatory_macro",
+        "magnitude_hits": 287,
+        "magnitude_precision": 0.7473958333333333,
+        "precision_difference": 0.44010416666666663
+      }
+    }
+  },
+  "new_threshold_optimized_on_outcomes": false,
+  "rank_disagreement_top10_confirmation_macro": {
+    "five_mb": {
+      "avi_only_prevalence": 0.06327479266873674,
+      "block_size": 5000000,
+      "cell_context": "confirmation_macro",
+      "confirmation_role": "confirmatory_macro",
+      "difference_ci95_high": 0.09009317634255926,
+      "difference_ci95_low": 0.0778643212775188,
+      "magnitude_only_prevalence": 0.1470757390611016,
+      "prevalence_difference": 0.08380094639236486,
+      "prevalence_ratio": 2.4123558685724773,
+      "ratio_ci95_high": 2.590318637328161,
+      "ratio_ci95_low": 2.2654227352740346
+    },
+    "one_mb": {
+      "avi_only_prevalence": 0.06327479266873674,
+      "block_size": 1000000,
+      "cell_context": "confirmation_macro",
+      "confirmation_role": "confirmatory_macro",
+      "difference_ci95_high": 0.08914683331300176,
+      "difference_ci95_low": 0.07836584434484728,
+      "magnitude_only_prevalence": 0.1470757390611016,
+      "prevalence_difference": 0.08380094639236486,
+      "prevalence_ratio": 2.4123558685724773,
+      "ratio_ci95_high": 2.5714720061917413,
+      "ratio_ci95_low": 2.268746534649027
+    }
+  },
+  "scientific_rules_mutated": false
+}

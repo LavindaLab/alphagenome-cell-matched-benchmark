@@ -1,0 +1,12 @@
+{
+  "confirmation_split_accessed": false,
+  "essential_splice_overlap": 0,
+  "gencode_sha256": "83fba3e9b03f0b8c958f3595c6c350adc55f468abf8b0e47b6d5284cfe13a453",
+  "gencode_source": "GENCODE release 50 comprehensive gene annotation GTF",
+  "generated_utc": "2026-09-13T21:00:19.363100+00:00",
+  "noncoding_eligible": 248267,
+  "protein_coding_cds_overlap": 6798,
+  "rule": "exclude protein-coding transcript CDS overlap or either of two intronic bases adjacent to an internal protein-coding exon boundary",
+  "scientific_rules_mutated": false,
+  "variants": 255065
+}

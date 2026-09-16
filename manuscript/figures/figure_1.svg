@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="540" height="610" preserveAspectRatio="xMinYMin meet" viewBox="0 0 540 610" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="540" height="610"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-610)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="25" y="582" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1164) scale(1,-1)">Independent, outcome-blind evaluation of AlphaGenome Atlas</text>
+			<text x="25" y="548" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1096) scale(1,-1)">A</text>
+			<text x="43" y="548" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1096) scale(1,-1)">Frozen evaluation workflow</text>
+			<rect x="25" y="475" width="84" height="45" rx="4" ry="4" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="47.596000000000004" y="502" style="font-family: Helvetica-Bold; font-size: 7.2px;fill: rgb(14%,27%,41%); stroke:none;" transform="translate(0,1004) scale(1,-1)">Siraj MPRA</text>
+			<text x="44.0817" y="486" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,972) scale(1,-1)">304,278 variants</text>
+			<path d="M 109,497 L 126,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 122,500 L 126,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 122,494 L 126,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<rect x="130" y="475" width="84" height="45" rx="4" ry="4" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="146.5984" y="502" style="font-family: Helvetica-Bold; font-size: 7.2px;fill: rgb(14%,27%,41%); stroke:none;" transform="translate(0,1004) scale(1,-1)">Coordinate/QC</text>
+			<text x="139.9491" y="486" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,972) scale(1,-1)">246,674 held-out SNVs</text>
+			<path d="M 214,497 L 231,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 227,500 L 231,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 227,494 L 231,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<rect x="235" y="475" width="84" height="45" rx="4" ry="4" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="253.18959999999998" y="502" style="font-family: Helvetica-Bold; font-size: 7.2px;fill: rgb(14%,27%,41%); stroke:none;" transform="translate(0,1004) scale(1,-1)">Atlas retrieval</text>
+			<text x="249.0876" y="486" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,972) scale(1,-1)">5 exact cell contexts</text>
+			<path d="M 319,497 L 336,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 332,500 L 336,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 332,494 L 336,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<rect x="340" y="475" width="84" height="45" rx="4" ry="4" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="352.9912" y="502" style="font-family: Helvetica-Bold; font-size: 7.2px;fill: rgb(14%,27%,41%); stroke:none;" transform="translate(0,1004) scale(1,-1)">Prediction freeze</text>
+			<text x="350.8171" y="486" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,972) scale(1,-1)">outcomes inaccessible</text>
+			<path d="M 424,497 L 441,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 437,500 L 441,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 437,494 L 441,497 Z" style="stroke: rgb(41%,44%,50%); stroke-linecap: butt; stroke-width: 1;"/>
+			<rect x="445" y="475" width="84" height="45" rx="4" ry="4" style="stroke: rgb(14%,27%,41%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="457.192" y="502" style="font-family: Helvetica-Bold; font-size: 7.2px;fill: rgb(14%,27%,41%); stroke:none;" transform="translate(0,1004) scale(1,-1)">Held-out analysis</text>
+			<text x="464.0817" y="486" style="font-family: Helvetica; font-size: 6.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,972) scale(1,-1)">rules unchanged</text>
+			<text x="25" y="435" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,870) scale(1,-1)">B</text>
+			<text x="43" y="435" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,870) scale(1,-1)">Exact-context evaluation and frozen roles</text>
+			<text x="35" y="405" style="font-family: Helvetica-Bold; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,810) scale(1,-1)">MPRA cell</text>
+			<text x="145" y="405" style="font-family: Helvetica-Bold; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,810) scale(1,-1)">Atlas ontology</text>
+			<text x="285" y="405" style="font-family: Helvetica-Bold; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,810) scale(1,-1)">role</text>
+			<text x="430" y="405" style="font-family: Helvetica-Bold; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,810) scale(1,-1)">directional n</text>
+			<rect x="25" y="374" width="490" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="35" y="382" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,764) scale(1,-1)">A549</text>
+			<text x="145" y="382" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,764) scale(1,-1)">EFO:0001086</text>
+			<text x="285" y="382" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,764) scale(1,-1)">descriptive</text>
+			<text x="430" y="382" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,764) scale(1,-1)">2,249</text>
+			<text x="35" y="354" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,708) scale(1,-1)">HepG2</text>
+			<text x="145" y="354" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,708) scale(1,-1)">EFO:0001187</text>
+			<text x="285" y="354" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,708) scale(1,-1)">confirmatory</text>
+			<text x="430" y="354" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,708) scale(1,-1)">13,045</text>
+			<rect x="25" y="318" width="490" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="35" y="326" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,652) scale(1,-1)">K562</text>
+			<text x="145" y="326" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,652) scale(1,-1)">EFO:0002067</text>
+			<text x="285" y="326" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,652) scale(1,-1)">confirmatory</text>
+			<text x="430" y="326" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,652) scale(1,-1)">15,809</text>
+			<text x="35" y="298" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,596) scale(1,-1)">HCT116</text>
+			<text x="145" y="298" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,596) scale(1,-1)">EFO:0002824</text>
+			<text x="285" y="298" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,596) scale(1,-1)">confirmatory</text>
+			<text x="430" y="298" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,596) scale(1,-1)">5,866</text>
+			<rect x="25" y="262" width="490" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="35" y="270" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,540) scale(1,-1)">SK-N-SH</text>
+			<text x="145" y="270" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,540) scale(1,-1)">EFO:0003072</text>
+			<text x="285" y="270" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,540) scale(1,-1)">confirmatory</text>
+			<text x="430" y="270" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,540) scale(1,-1)">13,762</text>
+			<text x="25" y="225" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,450) scale(1,-1)">C</text>
+			<text x="43" y="225" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,450) scale(1,-1)">Integrity and independence checks</text>
+			<rect x="30" y="183" width="230" height="36" rx="3" ry="3" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="40" y="205" style="font-family: Helvetica; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,410) scale(1,-1)">Atlas completeness</text>
+			<text x="177.442" y="195" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(16%,61%,56%); stroke:none;" transform="translate(0,390) scale(1,-1)">246,674 / 246,674</text>
+			<rect x="285" y="183" width="230" height="36" rx="3" ry="3" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="295" y="205" style="font-family: Helvetica; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,410) scale(1,-1)">Prediction inspection</text>
+			<text x="434.449" y="195" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(16%,61%,56%); stroke:none;" transform="translate(0,390) scale(1,-1)">273 / 273 checks</text>
+			<rect x="30" y="131" width="230" height="36" rx="3" ry="3" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="40" y="153" style="font-family: Helvetica; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,306) scale(1,-1)">Frozen-result inspection</text>
+			<text x="189.457" y="143" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(16%,61%,56%); stroke:none;" transform="translate(0,286) scale(1,-1)">25 / 25 checks</text>
+			<rect x="285" y="131" width="230" height="36" rx="3" ry="3" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="295" y="153" style="font-family: Helvetica; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,306) scale(1,-1)">Manuscript analysis inspection</text>
+			<text x="434.449" y="143" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(16%,61%,56%); stroke:none;" transform="translate(0,286) scale(1,-1)">100 / 100 checks</text>
+			<rect x="30" y="79" width="230" height="36" rx="3" ry="3" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="40" y="101" style="font-family: Helvetica; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,202) scale(1,-1)">Gate outcomes in confirmation</text>
+			<text x="244.996" y="91" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(14%,27%,41%); stroke:none;" transform="translate(0,182) scale(1,-1)">0</text>
+			<rect x="285" y="79" width="230" height="36" rx="3" ry="3" style="stroke: rgb(89%,90%,92%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="295" y="101" style="font-family: Helvetica; font-size: 7px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,202) scale(1,-1)">Duplicate variant-cell rows</text>
+			<text x="499.996" y="91" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(14%,27%,41%); stroke:none;" transform="translate(0,182) scale(1,-1)">0</text>
+			<text x="25" y="18" style="font-family: Helvetica; font-size: 7.2px;fill: rgb(41%,44%,50%); stroke:none;" transform="translate(0,36) scale(1,-1)">All policy definitions, thresholds and outcomes were frozen before held-out outcome access.</text>
+		</g>
+	</g>
+</svg>

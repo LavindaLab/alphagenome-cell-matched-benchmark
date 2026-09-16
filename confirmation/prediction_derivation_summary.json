@@ -1,0 +1,20 @@
+{
+  "avi_rows": 246674,
+  "avi_sha256": "376835257fb38f72d2b8afd3adc57b35ffa750ac0dfb0fde3b211d64a6289346",
+  "cache_tree_sha256": "78e17ef3b818fa2aac5abef52fa8e4287229c1741ebf60aa37de4060859fafd4",
+  "complete_variants": 246674,
+  "features_sha256": "fb2c07ea03f56fcc11bf1d0e380f924562bd785a5d015fa766281e17bb639b92",
+  "generated_utc": "2026-09-14T01:47:09.840928+00:00",
+  "incomplete_variants": 0,
+  "mpra_functional_outcomes_accessed": false,
+  "prediction_feature_rows": 1233370,
+  "rows_by_cell": {
+    "A549": 246674,
+    "HCT116": 246674,
+    "HepG2": 246674,
+    "K562": 246674,
+    "SK-N-SH": 246674
+  },
+  "scientific_rules_mutated": false,
+  "status_sha256": "1464f074cc12f52930a0897f4e4d68111521372c5511744dd33587b995bba0b8"
+}

@@ -1,0 +1,50 @@
+{
+  "academic_noncommercial_lane": true,
+  "analysis_implementation_freeze_required_before_outcome_access": true,
+  "base_requests": 246674,
+  "combined_scorers_validated_outcome_blind": true,
+  "confirmation_mpra_outcomes_accessed": false,
+  "estimated_derived_feature_bytes_pilot_linear": 223674314,
+  "estimated_regulatory_score_bytes_pilot_linear": 1034530134,
+  "estimated_separate_avi_bytes_pilot_linear": 46974599,
+  "exact_prior_benchmark_exclusions": 17,
+  "final_hg38_set_sha256": "c364d8f60ad9e64a65ae9f54021b5475c03f47f2b12661ce4d66944dc149f59d",
+  "final_query_variants": 246674,
+  "frozen_scorers": [
+    "DNASE",
+    "CHIP_HISTONE",
+    "AVI_SCORE"
+  ],
+  "frozen_track_pairs": {
+    "DNASE": {
+      "EFO:0001086": "107",
+      "EFO:0001187": "109",
+      "EFO:0002067": "118",
+      "EFO:0002824": "146",
+      "EFO:0003072": "153"
+    },
+    "H3K27ac": {
+      "EFO:0001086": "328",
+      "EFO:0001187": "338",
+      "EFO:0002067": "392",
+      "EFO:0002824": "465",
+      "EFO:0003072": "511"
+    }
+  },
+  "manifest_gzip_sha256": "10761f6ef1f4c46f31175fbdcdaf3f119943a7c6fb9a951864d6c4766ff986a1",
+  "max_workers": 4,
+  "outcome_aware_development": false,
+  "output_terms_effective": "2025-06-25",
+  "output_terms_sha256": "a12935888c9c39e5568da86c5ec49fe651ad43ca3e37aa2184ad01b3e8320bc4",
+  "pilot_decision_commit": "a3d78f0",
+  "pilot_decision_sha256": "c9ca2d975a2493e7e2aefabbcc770ace4c912fe447def8c48065415342f67944",
+  "pilot_metadata_sha256": "b77b2c5a5f818a348b790569e8e7ec1940bff2c27ba77ac108ce141fdea297e2",
+  "projected_minutes_before_retries": 274.08222222222224,
+  "requests_per_minute_cap": 900,
+  "retries": 2,
+  "scientific_rules_mutated": false,
+  "sdk_commit": "aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d",
+  "sdk_version": "0.9.0",
+  "static_avi_archive_required": false,
+  "query_set_and_retrieval_code_commit": "5147add"
+}

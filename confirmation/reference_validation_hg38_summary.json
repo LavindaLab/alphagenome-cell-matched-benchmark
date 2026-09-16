@@ -1,0 +1,17 @@
+{
+  "assembly": "hg38",
+  "coordinate_conversion": "1-based variant position to [position-1, position) BED interval",
+  "failed_sandbox_api_receipt_preserved": true,
+  "generated_utc": "2026-09-13T20:57:59.736303+00:00",
+  "mpra_functional_outcomes_accessed": false,
+  "normalized_result_sha256": "38af654d42561b5b35bdcf0179768759246f15514604bfc368f8ecc582a14d21",
+  "source": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.2bit",
+  "status_counts": {
+    "match": 253425,
+    "mismatch": 1640
+  },
+  "two_bit_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+  "two_bit_to_fa_sha256": "53245075e3a54afe67c818c4ddb3f2433efe4bff3609e2a35703583f74675256",
+  "valid_reference_fraction": 0.9935702664026816,
+  "variants": 255065
+}

@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-09-13T21:49:20Z",
+  "comparison": "confirmation extractor output versus the previously frozen gate extractor output, excluding the gate-only stratum_id column",
+  "confirmation_extractor_sha256": "1b9ea887b2df764a107e3478fa70788a8b721d88529150cf77272a3da9b4ed60",
+  "gate_extractor_sha256": "4c1531960801cef5ba1b8350b759dbe9b3c4b99e4a8906763a9043d0706cefd3",
+  "frozen_gate_outcomes_sha256": "786181a2f2425216e5ebddcb3bd95482538b228a1f40e9c66786669df51a96c6",
+  "regression_output_gzip_sha256": "f3fbf7da9cb30d68e5598b1dc041571cf66d4233d426a37b720c32c87ae61ce2",
+  "gate_variants": 10000,
+  "rows_compared": 50000,
+  "shared_fields_compared": [
+    "source_variant_id_hg19",
+    "variant_id_hg38",
+    "cell_context",
+    "block_id_1mb_hg19",
+    "measured",
+    "activity_log2fc",
+    "active",
+    "enhancer_active",
+    "log2skew_alt_minus_ref",
+    "emvar"
+  ],
+  "semantic_diff_exit_code": 0,
+  "passed": true,
+  "held_out_confirmation_outcomes_accessed": false,
+  "scientific_rules_mutated": false
+}

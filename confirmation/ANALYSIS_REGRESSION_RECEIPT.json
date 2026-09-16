@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-09-13T21:55:01Z",
+  "purpose": "computational and statistical plumbing regression using only the previously accessed gate set",
+  "analysis_script_sha256": "f34b02fea83d59360ea4efadccfe9018c37a5910b8c033f1f69820bc2f03440e",
+  "gate_variants": 10000,
+  "gate_outcome_rows": 50000,
+  "analysis_completed": true,
+  "result_verification_checks_passed": 25,
+  "result_verification_checks_total": 25,
+  "result_verification_passed": true,
+  "result_inspection_sha256": "65bedfdc6d6bf0a0ec8c0f6e876a9e024d907d09c960cb2d4cdf16abf929fd79",
+  "result_manifest_sha256": "c65c61a69f4fe3c0237cdeedc5a74812b362d8485779b9f431a30b4126dd9d7a",
+  "interpretation": "plumbing pass only; the temporary gate fixture intentionally lacks the confirmation-only noncoding filter and has no overlapping confirmation ADASTRA evidence, so numerical estimates and value-screen flags from this regression are not scientific results",
+  "held_out_confirmation_outcomes_accessed": false,
+  "scientific_rules_mutated": false,
+  "passed": true
+}

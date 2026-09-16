@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-09-13T22:26:00Z",
+  "purpose": "outcome-blind regression of confirmation cache derivation and independent verification using the first completed 1000-variant cache chunk",
+  "variants": 1000,
+  "complete_variants": 1000,
+  "derived_feature_rows": 5000,
+  "derive_script_sha256": "e0463d31fec3221040bd42716d09d235d99277de867edc24ae7bd6ce0e15e74c",
+  "verification_script_sha256": "74ae9d23def6864c750371f6eae34dae1606e46db25d68b517affb3124612302",
+  "verification_receipt_sha256": "3f0b3608df746e6f67592fa94730d57647c4b3ebcdf361bf32b589ede8d22eb5",
+  "checks_passed": 27,
+  "checks_total": 27,
+  "raw_response_hashes_recomputed": true,
+  "derived_values_recomputed_from_cache": true,
+  "confirmation_mpra_outcomes_accessed": false,
+  "scientific_rules_mutated": false,
+  "passed": true
+}

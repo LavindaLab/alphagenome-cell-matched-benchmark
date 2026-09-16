@@ -1,0 +1,234 @@
+{
+  "checks": [
+    {
+      "check": "output_hash_bootstrap_draws.tsv.gz",
+      "expected": "f8183cb482ec6e34c8743332a86abca0fdfc395d943389573385b3a14b241b3f",
+      "observed": "f8183cb482ec6e34c8743332a86abca0fdfc395d943389573385b3a14b241b3f",
+      "passed": true
+    },
+    {
+      "check": "output_hash_budget_utility.tsv",
+      "expected": "0c8ccd6d93c54220b814b0da62ab71f5489e9cea1e0b8089bb7498e653e2b35b",
+      "observed": "0c8ccd6d93c54220b814b0da62ab71f5489e9cea1e0b8089bb7498e653e2b35b",
+      "passed": true
+    },
+    {
+      "check": "output_hash_confirmation_results.json",
+      "expected": "10b45ef29ae7d89c83a10e42fbbac425556283398012412231661027230f05af",
+      "observed": "10b45ef29ae7d89c83a10e42fbbac425556283398012412231661027230f05af",
+      "passed": true
+    },
+    {
+      "check": "output_hash_discordance.tsv",
+      "expected": "8dd1f285b5493eda13a3acd272c2c34dfbbb0e9a1d680bd3555ca630921864a4",
+      "observed": "8dd1f285b5493eda13a3acd272c2c34dfbbb0e9a1d680bd3555ca630921864a4",
+      "passed": true
+    },
+    {
+      "check": "output_hash_endogenous_adastra.tsv",
+      "expected": "aef058a70c6b441d40f43b82f394ce986708df254644350077697364fb7289a9",
+      "observed": "aef058a70c6b441d40f43b82f394ce986708df254644350077697364fb7289a9",
+      "passed": true
+    },
+    {
+      "check": "output_hash_primary_by_cell.tsv",
+      "expected": "3e8aabcfbd4a0acb3ac172c1df75f7b36461d1bf8d52dcc8903a52472ff50a6f",
+      "observed": "3e8aabcfbd4a0acb3ac172c1df75f7b36461d1bf8d52dcc8903a52472ff50a6f",
+      "passed": true
+    },
+    {
+      "check": "output_hash_risk_coverage.tsv",
+      "expected": "74fe4be8ab86ce8af2b9853138a22488be627a766b76383a1e683a8a2645160c",
+      "observed": "74fe4be8ab86ce8af2b9853138a22488be627a766b76383a1e683a8a2645160c",
+      "passed": true
+    },
+    {
+      "check": "authorization_hash",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "gate_outcomes_excluded",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "confirmation_outcomes_used",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "scientific_rules_unchanged",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "analysis_script_bound",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "primary_five_cells",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "a549_descriptive",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "primary_macro",
+      "expected": 0.006373738742514058,
+      "observed": 0.006373738742514058,
+      "passed": true
+    },
+    {
+      "check": "five_cell_macro",
+      "expected": 0.0033212132162334694,
+      "observed": 0.0033212132162334694,
+      "passed": true
+    },
+    {
+      "check": "primary_counts",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "bootstrap_counts",
+      "expected": [
+        2000,
+        2000
+      ],
+      "observed": [
+        2000,
+        2000
+      ],
+      "passed": true
+    },
+    {
+      "check": "bootstrap_1mb_ci",
+      "expected": [
+        -0.00039865311196734155,
+        0.011681588997589238
+      ],
+      "observed": [
+        -0.00039865311196734155,
+        0.011681588997589238
+      ],
+      "passed": true
+    },
+    {
+      "check": "bootstrap_5mb_ci",
+      "expected": [
+        -3.672858573188446e-05,
+        0.011152958144301105
+      ],
+      "observed": [
+        -3.672858573188446e-05,
+        0.011152958144301105
+      ],
+      "passed": true
+    },
+    {
+      "check": "utility_screen_384",
+      "expected": {
+        "absolute_difference": 0.271484375,
+        "avi_macro_precision": 0.37630208333333337,
+        "cells_favoring_magnitude": 4,
+        "magnitude_macro_precision": 0.6477864583333334,
+        "relative_gain": 0.7214532871972317
+      },
+      "observed": {
+        "absolute_difference": 0.271484375,
+        "avi_macro_precision": 0.37630208333333337,
+        "cells_favoring_magnitude": 4,
+        "magnitude_macro_precision": 0.6477864583333334,
+        "relative_gain": 0.7214532871972317
+      },
+      "passed": true
+    },
+    {
+      "check": "utility_screen_1000",
+      "expected": {
+        "absolute_difference": 0.24324999999999997,
+        "avi_macro_precision": 0.31925000000000003,
+        "cells_favoring_magnitude": 4,
+        "magnitude_macro_precision": 0.5625,
+        "relative_gain": 0.7619420516836333
+      },
+      "observed": {
+        "absolute_difference": 0.24324999999999997,
+        "avi_macro_precision": 0.31925000000000003,
+        "cells_favoring_magnitude": 4,
+        "magnitude_macro_precision": 0.5625,
+        "relative_gain": 0.7619420516836333
+      },
+      "passed": true
+    },
+    {
+      "check": "agreement_ratios",
+      "expected": {
+        "HCT116": 1.702788997101796,
+        "HepG2": 1.7281483374424143,
+        "K562": 1.758976726174683,
+        "SK-N-SH": 1.3866492388253524
+      },
+      "observed": {
+        "HCT116": 1.702788997101796,
+        "HepG2": 1.7281483374424143,
+        "K562": 1.758976726174683,
+        "SK-N-SH": 1.3866492388253524
+      },
+      "passed": true
+    },
+    {
+      "check": "quantitative_value_screens",
+      "expected": {
+        "A_experimental_utility": true,
+        "B_concordance_policy": false,
+        "C_marker_policy_distinction": true
+      },
+      "observed": {
+        "A_experimental_utility": true,
+        "B_concordance_policy": false,
+        "C_marker_policy_distinction": true
+      },
+      "passed": true
+    },
+    {
+      "check": "qualitative_gate_pending",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    }
+  ],
+  "checks_passed": 25,
+  "checks_total": 25,
+  "gate_outcomes_used": false,
+  "inspected_utc": "2026-09-14T01:57:16.843799+00:00",
+  "passed": true,
+  "primary_1mb_bootstrap_95_ci": [
+    -0.00039865311196734155,
+    0.011681588997589238
+  ],
+  "primary_5mb_bootstrap_95_ci": [
+    -3.672858573188446e-05,
+    0.011152958144301105
+  ],
+  "primary_macro_difference": 0.006373738742514058,
+  "quantitative_value_screens": {
+    "A_experimental_utility": true,
+    "B_concordance_policy": false,
+    "C_marker_policy_distinction": true
+  },
+  "scientific_rules_mutated": false
+}

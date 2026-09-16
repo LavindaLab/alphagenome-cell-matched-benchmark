@@ -1,0 +1,26 @@
+{
+  "archive_rows_scanned": 31266,
+  "archive_sha256": "d8825eaf985baa4d8cea7b5215a4cfea988065abcc12022b88f911a7d763f648",
+  "confirmation_mpra_outcomes_accessed": false,
+  "direction_definition": "sign(es_mean_alt - es_mean_ref); consensus across significant TFs per variant-cell is frozen for sensitivity analysis",
+  "evidence_tier": "protocol tier 2: exact-cell allele-specific TF binding",
+  "exact_cell_files": 378,
+  "generated_utc": "2026-09-13T21:23:14.449524+00:00",
+  "igvf_accession": "IGVFFI5943XCOS",
+  "igvf_source_url": "https://data.igvf.org/reference-files/IGVFFI5943XCOS/",
+  "manifest_sha256": "10761f6ef1f4c46f31175fbdcdaf3f119943a7c6fb9a951864d6c4766ff986a1",
+  "output_sha256": "e199d3eddda863f3805fc1412f3fb7640a5ef0a797b5d747c6cb0ea63a8ad856",
+  "overlap_rows": 3340,
+  "overlap_unique_variant_cells": 2329,
+  "scientific_rules_mutated": false,
+  "significant_fdr_0_05_rows": 3340,
+  "significant_rows_by_cell": {
+    "A549": 350,
+    "HCT116": 226,
+    "HepG2": 894,
+    "K562": 1776,
+    "SK-N-SH": 94
+  },
+  "significant_unique_variant_cells": 2329,
+  "source": "ADASTRA CL-TF BillCipher release (July 2022), distributed by IGVF"
+}

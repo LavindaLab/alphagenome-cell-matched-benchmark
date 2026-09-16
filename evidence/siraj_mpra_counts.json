@@ -1,0 +1,102 @@
+{
+  "table4": {
+    "file": "/tmp/siraj_table4.xlsx",
+    "per_cell": {
+      "A549": {
+        "active": 9518,
+        "active_non_emvar": 6771,
+        "active_non_emvar_snvs": 6145,
+        "active_snvs": 8719,
+        "emvar": 2747,
+        "emvar_snvs": 2574,
+        "measured": 125796,
+        "measured_snvs": 114451,
+        "skew_estimate": 125796,
+        "skew_estimate_snvs": 114451
+      },
+      "HCT116": {
+        "active": 30540,
+        "active_non_emvar": 23235,
+        "active_non_emvar_snvs": 21713,
+        "active_snvs": 28495,
+        "emvar": 7305,
+        "emvar_snvs": 6782,
+        "measured": 185108,
+        "measured_snvs": 173166,
+        "skew_estimate": 185108,
+        "skew_estimate_snvs": 173166
+      },
+      "HEPG2": {
+        "active": 59758,
+        "active_non_emvar": 43432,
+        "active_non_emvar_snvs": 40145,
+        "active_snvs": 55329,
+        "emvar": 16326,
+        "emvar_snvs": 15184,
+        "measured": 303265,
+        "measured_snvs": 280409,
+        "skew_estimate": 303265,
+        "skew_estimate_snvs": 280409
+      },
+      "K562": {
+        "active": 60324,
+        "active_non_emvar": 40695,
+        "active_non_emvar_snvs": 37582,
+        "active_snvs": 55782,
+        "emvar": 19629,
+        "emvar_snvs": 18200,
+        "measured": 302926,
+        "measured_snvs": 280097,
+        "skew_estimate": 302926,
+        "skew_estimate_snvs": 280097
+      },
+      "SKNSH": {
+        "active": 57532,
+        "active_non_emvar": 40238,
+        "active_non_emvar_snvs": 37205,
+        "active_snvs": 53319,
+        "emvar": 17294,
+        "emvar_snvs": 16114,
+        "measured": 302834,
+        "measured_snvs": 279999,
+        "skew_estimate": 302834,
+        "skew_estimate_snvs": 279999
+      }
+    },
+    "sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2",
+    "totals": {
+      "active_any": 92560,
+      "active_any_snvs": 85821,
+      "emvar_any": 37249,
+      "emvar_any_snvs": 34641,
+      "indels_or_noncanonical": 22951,
+      "snvs": 281327,
+      "variants": 304278
+    }
+  },
+  "table7": {
+    "file": "/tmp/siraj_table7.xlsx",
+    "rows": 134344,
+    "rows_by_cell": {
+      "A549": 8394,
+      "HCT116": 25192,
+      "HEPG2": 33586,
+      "K562": 33586,
+      "SKNSH": 33586
+    },
+    "rows_by_cohort": {
+      "Complex Traits": 33576,
+      "eQTLs": 100768
+    },
+    "sha256": "63cb91e4cdf2d8e6aa55152dbb34e67368c22f1abfba515c592277caa3d760c1",
+    "snv_rows_by_cell": {
+      "A549": 7644,
+      "HCT116": 23373,
+      "HEPG2": 31017,
+      "K562": 31017,
+      "SKNSH": 31017
+    },
+    "unique_snvs": 30410,
+    "unique_variants": 32939
+  }
+}

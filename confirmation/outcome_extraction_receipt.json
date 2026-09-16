@@ -1,0 +1,44 @@
+{
+  "authorization_sha256": "45a720d97100951b46b4c612177a68e4913fee8c8fc0e9e1042350294eb37361",
+  "confirmation_outcomes_extracted_after_freeze": true,
+  "confirmation_variants": 246674,
+  "extracted_utc": "2026-09-14T01:54:57.866012+00:00",
+  "gate_outcomes_read": false,
+  "manifest_sha256": "10761f6ef1f4c46f31175fbdcdaf3f119943a7c6fb9a951864d6c4766ff986a1",
+  "outcome_rows": 1233370,
+  "output_sha256": "c895290817e0a3576eb09be4f8d77470b5043862553f8d33edd35009f2c6b5f0",
+  "per_cell_counts": {
+    "A549": {
+      "active": 7564,
+      "emvar": 2251,
+      "enhancer_active": 7561,
+      "measured": 100611
+    },
+    "HCT116": {
+      "active": 24639,
+      "emvar": 5911,
+      "enhancer_active": 24254,
+      "measured": 151396
+    },
+    "HepG2": {
+      "active": 47788,
+      "emvar": 13168,
+      "enhancer_active": 47044,
+      "measured": 245897
+    },
+    "K562": {
+      "active": 48534,
+      "emvar": 15870,
+      "enhancer_active": 48286,
+      "measured": 245606
+    },
+    "SK-N-SH": {
+      "active": 46097,
+      "emvar": 14023,
+      "enhancer_active": 44623,
+      "measured": 245542
+    }
+  },
+  "scientific_rules_mutated": false,
+  "table4_sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2"
+}

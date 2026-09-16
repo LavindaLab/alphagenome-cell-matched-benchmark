@@ -1,0 +1,10 @@
+{
+  "checks_passed": 100,
+  "checks_total": 100,
+  "failed_checks": [],
+  "failed_concordance_hypothesis_preserved": true,
+  "frozen_primary_authoritative": true,
+  "gate_outcomes_used": false,
+  "passed": true,
+  "scientific_rules_mutated": false
+}

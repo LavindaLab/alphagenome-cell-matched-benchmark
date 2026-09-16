@@ -1,0 +1,37 @@
+{
+  "block_salt": "AGATLAS-SIRAJ-2026-V01",
+  "confirmation_canonical_snvs": 255148,
+  "generated_utc": "2026-09-13T20:57:23.958869+00:00",
+  "measurement_mask_counts": {
+    "A549+HEPG2+K562": 52,
+    "A549+HEPG2+K562+SKNSH": 96954,
+    "A549+HEPG2+K562+SKNSH+HCT116": 6381,
+    "A549+K562": 7,
+    "A549+K562+SKNSH": 67,
+    "HEPG2": 1,
+    "HEPG2+HCT116": 385,
+    "HEPG2+K562+HCT116": 311,
+    "HEPG2+K562+SKNSH": 4,
+    "HEPG2+K562+SKNSH+HCT116": 149591,
+    "HEPG2+SKNSH+HCT116": 627,
+    "K562": 462,
+    "K562+SKNSH": 207,
+    "SKNSH": 99
+  },
+  "mpra_activity_calls_accessed": false,
+  "mpra_emvar_calls_accessed": false,
+  "mpra_skew_values_accessed": false,
+  "numeric_mpra_values_retained": false,
+  "outcome_aware_development": false,
+  "protocol": "PROTOCOL_v0.1.md",
+  "purpose": "outcome-blind freeze of all canonical SNVs in confirmation blocks",
+  "scientific_rules_mutated": false,
+  "source_variant_set_sha256": "6f56f56e298ea99d67945554d590c8418d568e073f03b995ee6587fda636d5dd",
+  "split_rule": "all canonical SNVs outside the lowest 10% of salted 1 Mb block-hash space",
+  "table4_fields_used": [
+    "Variant",
+    "cell-specific activity-estimate missingness only"
+  ],
+  "table4_sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2",
+  "unique_confirmation_blocks": 2568
+}

@@ -1,0 +1,29 @@
+{
+  "chunk_size": 1000,
+  "combined_base_requests": 246674,
+  "generated_utc": "2026-09-13T21:10:36.576514+00:00",
+  "manifest_sha256": "10761f6ef1f4c46f31175fbdcdaf3f119943a7c6fb9a951864d6c4766ff986a1",
+  "max_workers": 4,
+  "mpra_functional_outcomes_accessed": false,
+  "mpra_workbook_read": false,
+  "ontology_terms": {
+    "EFO:0001086": "A549",
+    "EFO:0001187": "HepG2",
+    "EFO:0002067": "K562",
+    "EFO:0002824": "HCT116",
+    "EFO:0003072": "SK-N-SH"
+  },
+  "pilot_metadata_sha256": "b77b2c5a5f818a348b790569e8e7ec1940bff2c27ba77ac108ce141fdea297e2",
+  "projected_minutes_before_retries": 274.08222222222224,
+  "purpose": "outcome-blind held-out confirmation Atlas and AVI retrieval",
+  "requested_scorers": [
+    "DNASE",
+    "CHIP_HISTONE",
+    "AVI_SCORE"
+  ],
+  "requests_per_minute_cap": 900,
+  "retries": 2,
+  "scientific_rules_mutated": false,
+  "sdk_commit": "aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d",
+  "variants": 246674
+}

@@ -1,0 +1,28 @@
+{
+  "analysis_implementation_committed": true,
+  "analysis_input_sha256": {
+    "adastra": "e199d3eddda863f3805fc1412f3fb7640a5ef0a797b5d747c6cb0ea63a8ad856",
+    "avi": "376835257fb38f72d2b8afd3adc57b35ffa750ac0dfb0fde3b211d64a6289346",
+    "features": "fb2c07ea03f56fcc11bf1d0e380f924562bd785a5d015fa766281e17bb639b92",
+    "metadata": "f3f6aa76e2a0468c9c455b3d930b16db457f42f19b4d927a94b16a7c9aae8681",
+    "regions": "62f1d96b04d30a58578120b46ac17cf4ef844c13c2937d101a1591620b334125"
+  },
+  "analysis_script_sha256": "f34b02fea83d59360ea4efadccfe9018c37a5910b8c033f1f69820bc2f03440e",
+  "authorization_scope": "one frozen held-out Siraj confirmation extraction and analysis",
+  "authorized_utc": "2026-09-14T01:50:44.291180+00:00",
+  "confirmation_outcome_access_authorized": true,
+  "endogenous_evidence_frozen": true,
+  "evidence_ledger_sha256": "05df7123ab873d25b3d4b93d0e93dcfdeccad98b009c8fe55e73b39dff7f382c",
+  "expected_confirmation_variants": 246674,
+  "gate_outcomes_authorized_or_read": false,
+  "manifest_gzip_sha256": "10761f6ef1f4c46f31175fbdcdaf3f119943a7c6fb9a951864d6c4766ff986a1",
+  "novelty_refresh_complete": true,
+  "novelty_refresh_sha256": "5f96b495998309decc8b86bb6512a760c0e9f46f42e1ecfb7dd387586a67f959",
+  "prediction_cache_tree_sha256": "78e17ef3b818fa2aac5abef52fa8e4287229c1741ebf60aa37de4060859fafd4",
+  "prediction_inspection_sha256": "3c3cd44cb9a3907d866eeed11a65d6dbe30c33f928f6f06531f381a418c5e910",
+  "prediction_retrieval_inspected": true,
+  "protocol_sha256": "09bcfa0c09d6c39f6b98c521d73e772629395252f6faa4a35e4d3a8314d43f5f",
+  "repository_head": "cec55548aaf69c2470f1ecb622e5ddc5b9efa991",
+  "scientific_rules_mutated": false,
+  "substantive_value_gate_sha256": "c8f4ca903e260edc134cb2e65df0f399c2339af8460b699ece602d37c095ef28"
+}

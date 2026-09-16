@@ -1,0 +1,20 @@
+{
+  "fields_accessed": [
+    "Variant",
+    "PIP",
+    "Category",
+    "Variant Selection Type",
+    "CS ID"
+  ],
+  "fine_mapped_candidates": 177023,
+  "generated_utc": "2026-09-13T21:12:54.610346+00:00",
+  "manifest_sha256": "10761f6ef1f4c46f31175fbdcdaf3f119943a7c6fb9a951864d6c4766ff986a1",
+  "mpra_functional_outcomes_accessed": false,
+  "output_sha256": "f3f6aa76e2a0468c9c455b3d930b16db457f42f19b4d927a94b16a7c9aae8681",
+  "pip_available": 208591,
+  "purpose": "outcome-blind PIP/category baseline metadata",
+  "scientific_rules_mutated": false,
+  "table1_sha256": "71a281cd68557458f54485d5408ca32c2cec91b8a06511b85bb171b7e1269e58",
+  "table4_opened": false,
+  "variants": 246674
+}

@@ -1,0 +1,18 @@
+{
+  "confirmation_mpra_outcomes_accessed": false,
+  "elapsed_seconds": 1.244,
+  "endpoint": "https://api.catalogkg.igvf.org/api/variants/genes",
+  "output_sha256": "22680b11500e769603257463dca514a720290fcc7d3927c59f8474ce4fd1bbba",
+  "page_size": 500,
+  "pages": 2,
+  "query": {
+    "method": "Variant-EFFECTS",
+    "source": "IGVF",
+    "verbose": true
+  },
+  "records": 737,
+  "retrieved_utc": "2026-09-13T21:18:52.253889+00:00",
+  "scientific_rules_mutated": false,
+  "selection_tier": "protocol tier 1: endogenous genome editing with allele-level molecular outcome",
+  "source": "official IGVF Catalog production API"
+}

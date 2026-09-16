@@ -1,0 +1,15 @@
+{
+  "chain_sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d",
+  "chain_source": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz",
+  "generated_utc": "2026-09-13T20:57:40.668267+00:00",
+  "lift_over_binary_sha256": "d1ad2cb36d75e257f12cc5263b8c0982e8c3a12ee3b19a6e3acc4e66ba30a81f",
+  "lift_over_stderr": "Reading liftover chains\nMapping coordinates",
+  "mpra_functional_outcomes_accessed": false,
+  "nonunique_mappings_excluded": 0,
+  "reverse_strand_mappings": 1105,
+  "source_assembly": "hg19 / GRCh37",
+  "source_variants": 255148,
+  "target_assembly": "hg38 / GRCh38",
+  "uniquely_lifted_variants": 255065,
+  "unmapped_variants": 83
+}

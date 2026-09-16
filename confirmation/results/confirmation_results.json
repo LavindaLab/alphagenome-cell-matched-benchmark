@@ -1,0 +1,66 @@
+{
+  "a549_role": "descriptive_count_rule_downgrade",
+  "agreement_emvar_prevalence_ratio_by_confirmation_cell": {
+    "HCT116": 1.702788997101796,
+    "HepG2": 1.7281483374424143,
+    "K562": 1.758976726174683,
+    "SK-N-SH": 1.3866492388253524
+  },
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20260913,
+  "confirmation_cells": [
+    "HepG2",
+    "K562",
+    "HCT116",
+    "SK-N-SH"
+  ],
+  "five_cell_descriptive_macro_difference": 0.0033212132162334694,
+  "generated_utc": "2026-09-14T01:57:15.434372+00:00",
+  "import_counts": {
+    "avi": 246674,
+    "features": 1233370,
+    "metadata": 246674,
+    "outcomes": 989052,
+    "regions": 246674
+  },
+  "primary_1mb_bootstrap_95_ci": [
+    -0.00039865311196734155,
+    0.011681588997589238
+  ],
+  "primary_5mb_bootstrap_95_ci": [
+    -3.672858573188446e-05,
+    0.011152958144301105
+  ],
+  "primary_counts_by_cell": {
+    "A549": 2249,
+    "HCT116": 5866,
+    "HepG2": 13045,
+    "K562": 15809,
+    "SK-N-SH": 13762
+  },
+  "primary_estimand": "four-cell macro mean sign-error(concordant)-sign-error(magnitude) at 10% coverage among noncoding enhancer-active emVars",
+  "primary_macro_difference": 0.006373738742514058,
+  "qualitative_value_gate_pending": true,
+  "quantitative_value_screens": {
+    "A_experimental_utility": true,
+    "B_concordance_policy": false,
+    "C_marker_policy_distinction": true
+  },
+  "scientific_rules_mutated": false,
+  "utility_screens": {
+    "1000": {
+      "absolute_difference": 0.24324999999999997,
+      "avi_macro_precision": 0.31925000000000003,
+      "cells_favoring_magnitude": 4,
+      "magnitude_macro_precision": 0.5625,
+      "relative_gain": 0.7619420516836333
+    },
+    "384": {
+      "absolute_difference": 0.271484375,
+      "avi_macro_precision": 0.37630208333333337,
+      "cells_favoring_magnitude": 4,
+      "magnitude_macro_precision": 0.6477864583333334,
+      "relative_gain": 0.7214532871972317
+    }
+  }
+}

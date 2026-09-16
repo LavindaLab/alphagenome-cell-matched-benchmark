@@ -1,0 +1,14 @@
+{
+  "candidate_variants": 255065,
+  "exact_candidate_exclusions": 17,
+  "explicit_variants_sha256": "b253328bb77aa267c88c750d9623357068903d63bc22f9e5508fa608c9b4d201",
+  "frozen_explicit_variants": 58,
+  "frozen_intervals": 14,
+  "generated_utc": "2026-09-13T21:02:32.808325+00:00",
+  "interval_source": "official Kircher saturation-MPRA portal GRCh38 coordinates; AlphaGenome Extended Data Fig. 8 locus list",
+  "intervals_sha256": "99f4ba507a5e37673c11069286664775ebd5ec4f697fe5a1245192d199353123",
+  "mpra_functional_outcomes_accessed": false,
+  "output_sha256": "704cd88e77e0ccff3589b0f3943248ea2d9eab6e9f3569aa0cf6d5ccdbb0ef40",
+  "purpose": "exact pre-query exclusion of prior AlphaGenome/Atlas examples and CAGI5 intervals",
+  "scientific_rules_mutated": false
+}
