@@ -132,7 +132,7 @@ Frozen SHA-256 hashes were `09bcfa0c09d6c39f6b98c521d73e772629395252f6faa4a35e4d
 
 ## Data and code availability
 
-The source MPRA and ADASTRA data are available from Siraj et al. [3] and IGVF [7], respectively. The public reproducibility repository provides the protocol, analysis code, derived data, figure source data and machine-readable Supplementary Tables S1–S7: https://github.com/healthai-hq/alphagenome-cell-matched-benchmark. The exact preprint release is archived at https://github.com/healthai-hq/alphagenome-cell-matched-benchmark/releases/tag/v1.0.0-biorxiv. AlphaGenome access is available from the provider [8].
+The source MPRA and ADASTRA data are available from Siraj et al. [3] and IGVF [7], respectively. The public reproducibility repository provides the protocol, analysis code, derived data, figure source data and machine-readable Supplementary Tables S1–S7: https://github.com/LavindaLab/alphagenome-cell-matched-benchmark. The exact preprint release is archived at https://github.com/LavindaLab/alphagenome-cell-matched-benchmark/releases/tag/v1.0.1-biorxiv. AlphaGenome access is available from the provider [8].
 
 ## Author information
 

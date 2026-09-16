@@ -39,7 +39,7 @@ python3 tools/verify_confirmation_results.py \
   confirmation/results/inspection_receipt.reproduced.json
 ```
 
-The immutable release corresponding to the preprint upload is tagged `v1.0.0-biorxiv`. File hashes are recorded in `SHA256SUMS.txt` and the release manifest.
+The immutable release corresponding to the preprint upload is tagged `v1.0.1-biorxiv`. File hashes are recorded in `SHA256SUMS.txt` and the release manifest.
 
 ## External source records
 
