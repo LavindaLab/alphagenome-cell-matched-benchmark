@@ -80,7 +80,7 @@ Not applicable. This computational study used publicly available variant-level a
 
 https://github.com/LavindaLab/alphagenome-cell-matched-benchmark
 
-**Versioned release - verify this link after GitHub authentication and before final approval**
+**Versioned release - published 14 October 2026; verify once before final approval**
 
 https://github.com/LavindaLab/alphagenome-cell-matched-benchmark/releases/tag/v1.1.0-biorxiv
 

@@ -16,9 +16,13 @@ Prepared 14 October 2026.
 
 Use `BIORXIV_SUBMISSION_FORM_ANSWERS.md` for the metadata fields and optional cover note.
 
-## One gate before final approval
+## Repository release
 
-The public GitHub repository still shows the earlier `v1.0.1-biorxiv` state because the saved GitHub credentials on this computer have expired. Publish the prepared local commit and `v1.1.0-biorxiv` release before approving the bioRxiv proof. Then open the release link in the form-answer sheet and confirm that it resolves without signing in.
+The revised repository state and attached submission files are published as `v1.1.0-biorxiv`:
+
+https://github.com/LavindaLab/alphagenome-cell-matched-benchmark/releases/tag/v1.1.0-biorxiv
+
+Open the release link once before approving the bioRxiv proof and confirm that it resolves without signing in.
 
 ## Portal sequence
 
