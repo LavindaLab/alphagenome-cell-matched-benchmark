@@ -1,0 +1,15 @@
+{
+  "checks_passed": 82,
+  "checks_total": 82,
+  "failed_checks": [],
+  "generated_utc": "2026-10-14T22:30:23.068631+00:00",
+  "manual_gates_remaining": [
+    "posting-day novelty and terms refresh",
+    "human citation and final submission-PDF approval",
+    "public repository archive DOI before journal submission"
+  ],
+  "passed": true,
+  "primary_negative_preserved": true,
+  "raw_atlas_outputs_in_manuscript_tree": [],
+  "scientific_scope_complete": true
+}

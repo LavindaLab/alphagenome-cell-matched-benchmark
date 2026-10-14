@@ -1,0 +1,3 @@
+post_hoc	cell_context	summary_level	budget	block_size_bp	exact_cell_precision	all_wrong_cell_mean_precision	exact_minus_all_wrong_mean	ci95_low	ci95_high	exact_cell_hits	all_wrong_cell_mean_hits	wrong_prediction_contexts	bootstrap_replicates	bootstrap_seed
+true	confirmation_macro	unweighted_four_cell_macro	384	1000000	0.6477864583333334	0.47233072916666663	0.17545572916666674	0.15347781813923517	0.19673308565261582	995	725.5	16	2000	21261008
+true	confirmation_macro	unweighted_four_cell_macro	1000	1000000	0.5625	0.4124375	0.1500625	0.13748575641746852	0.16212052066930674	2250	1649.75	16	2000	21261008

@@ -1,0 +1,576 @@
+{
+  "a549_role": "prediction_context_only; not a confirmatory outcome cell",
+  "analysis_script_sha256": "ea92065582a835cb706e453c80e7bd11ee398e0d3b96b85fe53cb793f9254ac6",
+  "analysis_status": "post_hoc",
+  "authoritative_combined_and_avi_replay": {
+    "all_passed": true,
+    "checks": [
+      {
+        "budget": 384,
+        "cell_context": "HepG2",
+        "expected_hits": 242,
+        "expected_precision": 0.6302083333333334,
+        "expected_selected": 384,
+        "observed_hits": 242,
+        "observed_precision": 0.6302083333333334,
+        "observed_selected": 384,
+        "passed": true,
+        "score": "combined_magnitude"
+      },
+      {
+        "budget": 384,
+        "cell_context": "HepG2",
+        "expected_hits": 154,
+        "expected_precision": 0.4010416666666667,
+        "expected_selected": 384,
+        "observed_hits": 154,
+        "observed_precision": 0.4010416666666667,
+        "observed_selected": 384,
+        "passed": true,
+        "score": "avi"
+      },
+      {
+        "budget": 1000,
+        "cell_context": "HepG2",
+        "expected_hits": 565,
+        "expected_precision": 0.565,
+        "expected_selected": 1000,
+        "observed_hits": 565,
+        "observed_precision": 0.565,
+        "observed_selected": 1000,
+        "passed": true,
+        "score": "combined_magnitude"
+      },
+      {
+        "budget": 1000,
+        "cell_context": "HepG2",
+        "expected_hits": 342,
+        "expected_precision": 0.342,
+        "expected_selected": 1000,
+        "observed_hits": 342,
+        "observed_precision": 0.342,
+        "observed_selected": 1000,
+        "passed": true,
+        "score": "avi"
+      },
+      {
+        "budget": 384,
+        "cell_context": "K562",
+        "expected_hits": 311,
+        "expected_precision": 0.8098958333333334,
+        "expected_selected": 384,
+        "observed_hits": 311,
+        "observed_precision": 0.8098958333333334,
+        "observed_selected": 384,
+        "passed": true,
+        "score": "combined_magnitude"
+      },
+      {
+        "budget": 384,
+        "cell_context": "K562",
+        "expected_hits": 156,
+        "expected_precision": 0.40625,
+        "expected_selected": 384,
+        "observed_hits": 156,
+        "observed_precision": 0.40625,
+        "observed_selected": 384,
+        "passed": true,
+        "score": "avi"
+      },
+      {
+        "budget": 1000,
+        "cell_context": "K562",
+        "expected_hits": 722,
+        "expected_precision": 0.722,
+        "expected_selected": 1000,
+        "observed_hits": 722,
+        "observed_precision": 0.722,
+        "observed_selected": 1000,
+        "passed": true,
+        "score": "combined_magnitude"
+      },
+      {
+        "budget": 1000,
+        "cell_context": "K562",
+        "expected_hits": 328,
+        "expected_precision": 0.328,
+        "expected_selected": 1000,
+        "observed_hits": 328,
+        "observed_precision": 0.328,
+        "observed_selected": 1000,
+        "passed": true,
+        "score": "avi"
+      },
+      {
+        "budget": 384,
+        "cell_context": "HCT116",
+        "expected_hits": 242,
+        "expected_precision": 0.6302083333333334,
+        "expected_selected": 384,
+        "observed_hits": 242,
+        "observed_precision": 0.6302083333333334,
+        "observed_selected": 384,
+        "passed": true,
+        "score": "combined_magnitude"
+      },
+      {
+        "budget": 384,
+        "cell_context": "HCT116",
+        "expected_hits": 121,
+        "expected_precision": 0.3151041666666667,
+        "expected_selected": 384,
+        "observed_hits": 121,
+        "observed_precision": 0.3151041666666667,
+        "observed_selected": 384,
+        "passed": true,
+        "score": "avi"
+      },
+      {
+        "budget": 1000,
+        "cell_context": "HCT116",
+        "expected_hits": 506,
+        "expected_precision": 0.506,
+        "expected_selected": 1000,
+        "observed_hits": 506,
+        "observed_precision": 0.506,
+        "observed_selected": 1000,
+        "passed": true,
+        "score": "combined_magnitude"
+      },
+      {
+        "budget": 1000,
+        "cell_context": "HCT116",
+        "expected_hits": 279,
+        "expected_precision": 0.279,
+        "expected_selected": 1000,
+        "observed_hits": 279,
+        "observed_precision": 0.279,
+        "observed_selected": 1000,
+        "passed": true,
+        "score": "avi"
+      },
+      {
+        "budget": 384,
+        "cell_context": "SK-N-SH",
+        "expected_hits": 200,
+        "expected_precision": 0.5208333333333334,
+        "expected_selected": 384,
+        "observed_hits": 200,
+        "observed_precision": 0.5208333333333334,
+        "observed_selected": 384,
+        "passed": true,
+        "score": "combined_magnitude"
+      },
+      {
+        "budget": 384,
+        "cell_context": "SK-N-SH",
+        "expected_hits": 147,
+        "expected_precision": 0.3828125,
+        "expected_selected": 384,
+        "observed_hits": 147,
+        "observed_precision": 0.3828125,
+        "observed_selected": 384,
+        "passed": true,
+        "score": "avi"
+      },
+      {
+        "budget": 1000,
+        "cell_context": "SK-N-SH",
+        "expected_hits": 457,
+        "expected_precision": 0.457,
+        "expected_selected": 1000,
+        "observed_hits": 457,
+        "observed_precision": 0.457,
+        "observed_selected": 1000,
+        "passed": true,
+        "score": "combined_magnitude"
+      },
+      {
+        "budget": 1000,
+        "cell_context": "SK-N-SH",
+        "expected_hits": 328,
+        "expected_precision": 0.328,
+        "expected_selected": 1000,
+        "observed_hits": 328,
+        "observed_precision": 0.328,
+        "observed_selected": 1000,
+        "passed": true,
+        "score": "avi"
+      }
+    ]
+  },
+  "block_sizes_bp": [
+    1000000,
+    5000000
+  ],
+  "bootstrap": {
+    "base_seed": 20261008,
+    "method": "chromosome-stratified block bootstrap conditional on each fixed ranked selection",
+    "replicate_count_basis": "existing repository practice uses 2,000 replicates",
+    "replicates": 2000,
+    "seed_by_block_size": {
+      "1000000": 21261008,
+      "5000000": 25261008
+    }
+  },
+  "confirmation_cells": [
+    "HepG2",
+    "K562",
+    "HCT116",
+    "SK-N-SH"
+  ],
+  "coverage_checks": {
+    "all_estimates_finite": true,
+    "bootstrap_draw_rows": 8000,
+    "full_four_outcome_by_five_prediction_context_grid": true,
+    "single_track_contrast_rows": 100,
+    "single_track_estimate_rows": 80,
+    "wrong_cell_contrast_rows": 20,
+    "wrong_cell_grid_rows": 80
+  },
+  "eligibility": {
+    "HCT116": {
+      "eligible_variants": 119946,
+      "identical_candidate_set_all_prediction_contexts": true,
+      "prediction_contexts": [
+        "A549",
+        "HepG2",
+        "K562",
+        "HCT116",
+        "SK-N-SH"
+      ]
+    },
+    "HepG2": {
+      "eligible_variants": 176396,
+      "identical_candidate_set_all_prediction_contexts": true,
+      "prediction_contexts": [
+        "A549",
+        "HepG2",
+        "K562",
+        "HCT116",
+        "SK-N-SH"
+      ]
+    },
+    "K562": {
+      "eligible_variants": 176198,
+      "identical_candidate_set_all_prediction_contexts": true,
+      "prediction_contexts": [
+        "A549",
+        "HepG2",
+        "K562",
+        "HCT116",
+        "SK-N-SH"
+      ]
+    },
+    "SK-N-SH": {
+      "eligible_variants": 176100,
+      "identical_candidate_set_all_prediction_contexts": true,
+      "prediction_contexts": [
+        "A549",
+        "HepG2",
+        "K562",
+        "HCT116",
+        "SK-N-SH"
+      ]
+    }
+  },
+  "fixed_budgets": [
+    384,
+    1000
+  ],
+  "headline": {
+    "1000": {
+      "five_mb": {
+        "exact_cell_minus_all_wrong_mean": {
+          "all_wrong_cell_mean_precision": 0.4124375,
+          "ci95": [
+            0.1373201864309199,
+            0.16315558628715068
+          ],
+          "exact_cell_precision": 0.5625,
+          "precision_difference": 0.1500625
+        },
+        "macro_hits_by_score": {
+          "avi": 1277,
+          "combined_magnitude": 2250,
+          "dnase_only": 2062,
+          "h3k27ac_only": 2236
+        },
+        "macro_precision_by_score": {
+          "avi": 0.31925000000000003,
+          "combined_magnitude": 0.5625,
+          "dnase_only": 0.5155000000000001,
+          "h3k27ac_only": 0.559
+        },
+        "single_track_contrasts": {
+          "combined_magnitude_minus_avi": {
+            "ci95": [
+              0.21896888663363395,
+              0.26738724584636364
+            ],
+            "precision_difference": 0.24324999999999997
+          },
+          "dnase_only_minus_avi": {
+            "ci95": [
+              0.17225955093409034,
+              0.2206773625084391
+            ],
+            "precision_difference": 0.19625000000000004
+          },
+          "dnase_only_minus_combined_magnitude": {
+            "ci95": [
+              -0.05874919382349752,
+              -0.03618432130675112
+            ],
+            "precision_difference": -0.04699999999999993
+          },
+          "h3k27ac_only_minus_avi": {
+            "ci95": [
+              0.21464888014630487,
+              0.2643705479682734
+            ],
+            "precision_difference": 0.23975000000000002
+          },
+          "h3k27ac_only_minus_combined_magnitude": {
+            "ci95": [
+              -0.01461208574291366,
+              0.008733087467931507
+            ],
+            "precision_difference": -0.0034999999999999476
+          }
+        }
+      },
+      "one_mb": {
+        "exact_cell_minus_all_wrong_mean": {
+          "all_wrong_cell_mean_precision": 0.4124375,
+          "ci95": [
+            0.13748575641746852,
+            0.16212052066930674
+          ],
+          "exact_cell_precision": 0.5625,
+          "precision_difference": 0.1500625
+        },
+        "macro_hits_by_score": {
+          "avi": 1277,
+          "combined_magnitude": 2250,
+          "dnase_only": 2062,
+          "h3k27ac_only": 2236
+        },
+        "macro_precision_by_score": {
+          "avi": 0.31925000000000003,
+          "combined_magnitude": 0.5625,
+          "dnase_only": 0.5155000000000001,
+          "h3k27ac_only": 0.559
+        },
+        "single_track_contrasts": {
+          "combined_magnitude_minus_avi": {
+            "ci95": [
+              0.2174049758294152,
+              0.2679817475492957
+            ],
+            "precision_difference": 0.24324999999999997
+          },
+          "dnase_only_minus_avi": {
+            "ci95": [
+              0.17100024218672044,
+              0.22246233042386507
+            ],
+            "precision_difference": 0.19625000000000004
+          },
+          "dnase_only_minus_combined_magnitude": {
+            "ci95": [
+              -0.05860454676527962,
+              -0.03581522515086938
+            ],
+            "precision_difference": -0.04699999999999993
+          },
+          "h3k27ac_only_minus_avi": {
+            "ci95": [
+              0.21472393857491467,
+              0.2656215165513454
+            ],
+            "precision_difference": 0.23975000000000002
+          },
+          "h3k27ac_only_minus_combined_magnitude": {
+            "ci95": [
+              -0.01570619950620768,
+              0.008235252814270974
+            ],
+            "precision_difference": -0.0034999999999999476
+          }
+        }
+      }
+    },
+    "384": {
+      "five_mb": {
+        "exact_cell_minus_all_wrong_mean": {
+          "all_wrong_cell_mean_precision": 0.47233072916666663,
+          "ci95": [
+            0.153648001915041,
+            0.19785951730688506
+          ],
+          "exact_cell_precision": 0.6477864583333334,
+          "precision_difference": 0.17545572916666674
+        },
+        "macro_hits_by_score": {
+          "avi": 578,
+          "combined_magnitude": 995,
+          "dnase_only": 878,
+          "h3k27ac_only": 1025
+        },
+        "macro_precision_by_score": {
+          "avi": 0.37630208333333337,
+          "combined_magnitude": 0.6477864583333334,
+          "dnase_only": 0.5716145833333334,
+          "h3k27ac_only": 0.6673177083333333
+        },
+        "single_track_contrasts": {
+          "combined_magnitude_minus_avi": {
+            "ci95": [
+              0.23072519707444727,
+              0.31378915075716296
+            ],
+            "precision_difference": 0.271484375
+          },
+          "dnase_only_minus_avi": {
+            "ci95": [
+              0.15329639376589524,
+              0.23761404009137463
+            ],
+            "precision_difference": 0.1953125
+          },
+          "dnase_only_minus_combined_magnitude": {
+            "ci95": [
+              -0.09494257163023438,
+              -0.05834417452661608
+            ],
+            "precision_difference": -0.076171875
+          },
+          "h3k27ac_only_minus_avi": {
+            "ci95": [
+              0.25066958953340546,
+              0.33368363423247127
+            ],
+            "precision_difference": 0.2910156249999999
+          },
+          "h3k27ac_only_minus_combined_magnitude": {
+            "ci95": [
+              -0.0033996462461371273,
+              0.04131620927410206
+            ],
+            "precision_difference": 0.01953124999999989
+          }
+        }
+      },
+      "one_mb": {
+        "exact_cell_minus_all_wrong_mean": {
+          "all_wrong_cell_mean_precision": 0.47233072916666663,
+          "ci95": [
+            0.15347781813923517,
+            0.19673308565261582
+          ],
+          "exact_cell_precision": 0.6477864583333334,
+          "precision_difference": 0.17545572916666674
+        },
+        "macro_hits_by_score": {
+          "avi": 578,
+          "combined_magnitude": 995,
+          "dnase_only": 878,
+          "h3k27ac_only": 1025
+        },
+        "macro_precision_by_score": {
+          "avi": 0.37630208333333337,
+          "combined_magnitude": 0.6477864583333334,
+          "dnase_only": 0.5716145833333334,
+          "h3k27ac_only": 0.6673177083333333
+        },
+        "single_track_contrasts": {
+          "combined_magnitude_minus_avi": {
+            "ci95": [
+              0.22879587305494392,
+              0.31304439370747633
+            ],
+            "precision_difference": 0.271484375
+          },
+          "dnase_only_minus_avi": {
+            "ci95": [
+              0.15169098353595326,
+              0.23699965415699656
+            ],
+            "precision_difference": 0.1953125
+          },
+          "dnase_only_minus_combined_magnitude": {
+            "ci95": [
+              -0.09625633572768849,
+              -0.05670960120121785
+            ],
+            "precision_difference": -0.076171875
+          },
+          "h3k27ac_only_minus_avi": {
+            "ci95": [
+              0.250916090590701,
+              0.33177897399309514
+            ],
+            "precision_difference": 0.2910156249999999
+          },
+          "h3k27ac_only_minus_combined_magnitude": {
+            "ci95": [
+              -0.004116546877635322,
+              0.04424240713119347
+            ],
+            "precision_difference": 0.01953124999999989
+          }
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "authoritative_budget_utility": "0c8ccd6d93c54220b814b0da62ab71f5489e9cea1e0b8089bb7498e653e2b35b",
+    "authorization": "45a720d97100951b46b4c612177a68e4913fee8c8fc0e9e1042350294eb37361",
+    "avi": "376835257fb38f72d2b8afd3adc57b35ffa750ac0dfb0fde3b211d64a6289346",
+    "features": "fb2c07ea03f56fcc11bf1d0e380f924562bd785a5d015fa766281e17bb639b92",
+    "metadata": "f3f6aa76e2a0468c9c455b3d930b16db457f42f19b4d927a94b16a7c9aae8681",
+    "outcome_receipt": "5238d07c1ba90a577ab8079c6379202acc020c45ce36f21da953bafc9dfdf5e5",
+    "outcomes": "c895290817e0a3576eb09be4f8d77470b5043862553f8d33edd35009f2c6b5f0",
+    "regions": "62f1d96b04d30a58578120b46ac17cf4ef844c13c2937d101a1591620b334125",
+    "result_manifest": "ba9c4c4c3e3b451a6e6300125256d2d5bb6f73214779432dd919782515f8e040"
+  },
+  "manuscript_unchanged": true,
+  "original_commit": "d4ac41b345b69bb6f1ec5324699f9f7e3c96bcc7",
+  "original_confirmatory_record_unchanged": true,
+  "output_sha256": {
+    "bootstrap_macro_contrasts.tsv.gz": "b02d3ed77caa1fab3c34c943ec4a536a727631ba4359390c033e381a4bdb8f36",
+    "single_track_contrasts.tsv": "75e62b91d10f338cb3278d8b9d96b86a1ccfcb0d49ea99f8335eefb58b145c34",
+    "single_track_estimates.tsv": "f010a786d12786694d868a5c7c3486db285c3538c1a042189bd8ab871da8ed5e",
+    "wrong_cell_contrasts.tsv": "20417c3031ed22d03e9a1d35529284de3d13750db3b0684b59734059b28a2359",
+    "wrong_cell_grid.tsv": "05f2c50197833ce0b0312d093336024dfe0c376431250cef49110b46f9505dda"
+  },
+  "post_hoc_request_date": "2026-10-08",
+  "prediction_contexts": [
+    "A549",
+    "HepG2",
+    "K562",
+    "HCT116",
+    "SK-N-SH"
+  ],
+  "single_track_reconstruction": {
+    "invalid_rows": 0,
+    "max_identity_failures": 0,
+    "min_identity_failures": 0,
+    "row_level_sample": {
+      "cell_context": "A549",
+      "concordance_C": 0.7884218692779541,
+      "magnitude_M": 0.8344978094100952,
+      "magnitude_winning_modality": "DNASE",
+      "reconstructed_abs_dnase_quantile": 0.8344978094100952,
+      "reconstructed_abs_h3k27ac_quantile": 0.7884218692779541,
+      "reconstructed_max": 0.8344978094100952,
+      "reconstructed_min": 0.7884218692779541,
+      "variant_id_hg38": "chr10:100240944:C:T"
+    },
+    "rows_checked": 1233370,
+    "ties_at_tolerance": 15989,
+    "tolerance": 1e-12,
+    "winner_identity_failures": 0
+  }
+}

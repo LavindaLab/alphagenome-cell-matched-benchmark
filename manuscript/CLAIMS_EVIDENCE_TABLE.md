@@ -9,6 +9,8 @@ The tab-delimited source of truth is `CLAIMS_EVIDENCE_TABLE.tsv`. It maps every 
 - Top-10% rank disagreement was informative: matched-only variants had higher emVar prevalence than AVI-only variants in every confirmatory context.
 - DNase/H3K27ac sign agreement marked emVar enrichment but did not improve the prespecified reporter-direction policy materially.
 - A scientist allocating a context-matched noncoding reporter assay should prefer matched regulatory outputs to AVI alone, while retaining AVI for broad, context-unknown or cross-mechanism triage.
+- In the post hoc fixed-score control, exact-cell ranking improved four-cell mean precision relative to the unweighted mean of four nonmatching contexts at 384 and 1,000 slots.
+- In the post hoc single-track control, H3K27ac-only and combined-score macro precision had similar point estimates and overlapping difference intervals at both budgets; DNase-only was lower.
 
 ## Claims prohibited
 
@@ -16,6 +18,8 @@ The tab-delimited source of truth is `CLAIMS_EVIDENCE_TABLE.tsv`. It maps every 
 - Universal superiority of matched scores over AVI.
 - Calibrated probability, causality, pathogenicity, clinical validity or in-vivo ground truth.
 - A claim that concordance improves MPRA direction.
+- A causal decomposition of cell identity, or a claim that exact-cell prediction exceeded every individual nonmatching context in every cell.
+- A general advantage from taking the maximum of DNase and H3K27ac over H3K27ac alone.
 - Any use permission beyond the provider’s current terms, or redistribution of raw Atlas/API outputs and the local prediction cache.
 
 ## Frozen inferential order
@@ -24,3 +28,4 @@ The tab-delimited source of truth is `CLAIMS_EVIDENCE_TABLE.tsv`. It maps every 
 2. Fixed-budget magnitude-versus-AVI utility is prespecified secondary evidence and the positive manuscript center.
 3. Rank disagreement and indicator models characterize why context affects utility; they are not optimized decision rules.
 4. ADASTRA is adjacent endogenous binding evidence only.
+5. Context and single-track controls are post hoc attribution analyses and do not alter the prespecified primary or secondary status of the original comparisons.

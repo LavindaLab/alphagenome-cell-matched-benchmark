@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated manuscript."
-title: "Cell-matched AlphaGenome benchmark: reproducibility package"
+title: "Cell-context matching improves AlphaGenome prioritization: reproducibility package"
 type: software
 authors:
   - family-names: Lavinda
     given-names: Olga
     orcid: "https://orcid.org/0000-0003-3577-5984"
-version: "1.0.1-biorxiv"
-date-released: 2026-09-16
+version: "1.1.0-biorxiv"
+date-released: 2026-10-14
 repository-code: "https://github.com/LavindaLab/alphagenome-cell-matched-benchmark"
 

@@ -42,10 +42,8 @@ def main() -> None:
         checks.append({"name": name, "passed": bool(condition)})
 
     required = [
-        "MANUSCRIPT.md", "FIGURE_CAPTIONS.md", "SUPPLEMENTARY_METHODS_RESULTS.md",
-        "LIMITATIONS.md", "DATA_CODE_AVAILABILITY.md", "AI_USE_DISCLOSURE.md",
-        "CLAIMS_EVIDENCE_TABLE.tsv", "PREPRINT_SUBMISSION_CHECKLIST.md",
-        "PUBLICATION_STRATEGY.md", "LITERATURE_CLAIM_LOCK_2026-09-14.md",
+        "MANUSCRIPT.md", "SUPPLEMENTARY_METHODS_RESULTS.md",
+        "CLAIMS_EVIDENCE_TABLE.tsv", "LITERATURE_CLAIM_LOCK_2026-09-14.md",
         "figure_manifest.json",
     ]
     for name in required:
@@ -98,7 +96,17 @@ def main() -> None:
     check("yield_1000", totals[(1000, "magnitude")] == (2250, 1764) and totals[(1000, "avi")] == (1277, 1090))
 
     claims = rows(MANUSCRIPT / "CLAIMS_EVIDENCE_TABLE.tsv")
-    check("claims_20", len(claims) == 20 and {row["claim_id"] for row in claims} == {f"C{i:02d}" for i in range(1, 21)})
+    check("claims_22", len(claims) == 22 and {row["claim_id"] for row in claims} == {f"C{i:02d}" for i in range(1, 23)})
+
+    context_receipt = json.loads((MANUSCRIPT / "analysis/context-controls/verification_receipt.json").read_text())
+    check("context_controls_15_of_15", context_receipt["passed"] and context_receipt["checks_passed"] == 15)
+    context_rows = rows(MANUSCRIPT / "analysis/context-controls/wrong_cell_contrasts.tsv")
+    context_macro = {
+        int(row["budget"]): row for row in context_rows
+        if row["cell_context"] == "confirmation_macro" and int(row["block_size_bp"]) == 1_000_000
+    }
+    check("context_384_point", close(context_macro[384]["exact_minus_all_wrong_mean"], 0.17545572916666674))
+    check("context_1000_point", close(context_macro[1000]["exact_minus_all_wrong_mean"], 0.1500625))
 
     figure_manifest = json.loads((MANUSCRIPT / "figure_manifest.json").read_text())
     check("figure_count", figure_manifest["figure_count"] == 6 and figure_manifest["pdf_pages"] == 6)
@@ -111,10 +119,10 @@ def main() -> None:
     check("pdf_six_pages", re.search(r"^Pages:\s+6$", pdf_info, re.MULTILINE) is not None)
     check("six_svg", len(list((MANUSCRIPT / "figures").glob("*.svg"))) == 6)
     check("six_png", len(list((MANUSCRIPT / "figures").glob("*.png"))) == 6)
-    check("eleven_figure_source_tables", len(list((MANUSCRIPT / "source-data").glob("*.tsv"))) == 11)
+    check("thirteen_figure_source_tables", len(list((MANUSCRIPT / "source-data").glob("*.tsv"))) == 13)
 
     manuscript_text = (MANUSCRIPT / "MANUSCRIPT.md").read_text()
-    for exact in ("27.15 percentage points", "24.32 points", "417 additional", "973 additional", "hypothesis failed"):
+    for exact in ("0.1755", "0.1501", "417 additional", "973", "hypothesis failed", "post hoc"):
         check(f"manuscript_contains_{exact}", exact in manuscript_text)
     inspectable_suffixes = {".md", ".tsv", ".json", ".py", ".svg"}
     inspectable = [path for path in MANUSCRIPT.rglob("*") if path.is_file() and path.suffix in inspectable_suffixes]

@@ -1,0 +1,82 @@
+{
+  "all_checks_passed": true,
+  "atlas_checks": "273/273",
+  "atlas_complete": 246674,
+  "atlas_incomplete": 0,
+  "atlas_request_attempts": 246674,
+  "atlas_retries": 2,
+  "cell_counts_and_uniqueness": {
+    "A549": {
+      "eligible_fine_mapped": 62319,
+      "measured_noncoding_variant_cells": 100611,
+      "primary_enhancer_active_emvars": 2249,
+      "unique_variants": 100611
+    },
+    "HCT116": {
+      "eligible_fine_mapped": 119946,
+      "measured_noncoding_variant_cells": 151396,
+      "primary_enhancer_active_emvars": 5866,
+      "unique_variants": 151396
+    },
+    "HepG2": {
+      "eligible_fine_mapped": 176396,
+      "measured_noncoding_variant_cells": 245897,
+      "primary_enhancer_active_emvars": 13045,
+      "unique_variants": 245897
+    },
+    "K562": {
+      "eligible_fine_mapped": 176198,
+      "measured_noncoding_variant_cells": 245606,
+      "primary_enhancer_active_emvars": 15809,
+      "unique_variants": 245606
+    },
+    "SK-N-SH": {
+      "eligible_fine_mapped": 176100,
+      "measured_noncoding_variant_cells": 245542,
+      "primary_enhancer_active_emvars": 13762,
+      "unique_variants": 245542
+    }
+  },
+  "database_import_counts": {
+    "avi": 246674,
+    "features": 1233370,
+    "metadata": 246674,
+    "outcomes": 989052,
+    "regions": 246674
+  },
+  "duplicate_variant_cell_rows": 0,
+  "evidence_ledger_sha256": "05df7123ab873d25b3d4b93d0e93dcfdeccad98b009c8fe55e73b39dff7f382c",
+  "evidence_ledger_sha256_authorized": "05df7123ab873d25b3d4b93d0e93dcfdeccad98b009c8fe55e73b39dff7f382c",
+  "exact_ontology_terms": {
+    "EFO:0001086": "A549",
+    "EFO:0001187": "HepG2",
+    "EFO:0002067": "K562",
+    "EFO:0002824": "HCT116",
+    "EFO:0003072": "SK-N-SH"
+  },
+  "frozen_analysis_sha256": "f34b02fea83d59360ea4efadccfe9018c37a5910b8c033f1f69820bc2f03440e",
+  "frozen_analysis_sha256_authorized": "f34b02fea83d59360ea4efadccfe9018c37a5910b8c033f1f69820bc2f03440e",
+  "gate_outcomes_read": false,
+  "outcome_extraction_after_freeze": true,
+  "protocol_sha256": "09bcfa0c09d6c39f6b98c521d73e772629395252f6faa4a35e4d3a8314d43f5f",
+  "protocol_sha256_authorized": "09bcfa0c09d6c39f6b98c521d73e772629395252f6faa4a35e4d3a8314d43f5f",
+  "reference_validation_pre_exclusion": {
+    "assembly": "hg38",
+    "coordinate_conversion": "1-based variant position to [position-1, position) BED interval",
+    "failed_sandbox_api_receipt_preserved": true,
+    "generated_utc": "2026-09-13T20:57:59.736303+00:00",
+    "mpra_functional_outcomes_accessed": false,
+    "normalized_result_sha256": "38af654d42561b5b35bdcf0179768759246f15514604bfc368f8ecc582a14d21",
+    "source": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.2bit",
+    "status_counts": {
+      "match": 253425,
+      "mismatch": 1640
+    },
+    "two_bit_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+    "two_bit_to_fa_sha256": "53245075e3a54afe67c818c4ddb3f2433efe4bff3609e2a35703583f74675256",
+    "valid_reference_fraction": 0.9935702664026816,
+    "variants": 255065
+  },
+  "result_checks": "25/25",
+  "scientific_rules_mutated": false
+}

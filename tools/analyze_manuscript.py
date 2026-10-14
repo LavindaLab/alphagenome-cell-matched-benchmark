@@ -615,9 +615,9 @@ def main() -> None:
     result_inspection = read_json(project / "confirmation/results/inspection_receipt.json")
     integrity = {
         "all_checks_passed": True,
-        "protocol_sha256": sha256(project / "PROTOCOL_v0.1.md"),
+        "protocol_sha256": sha256(project / "protocol/PROTOCOL_v0.1.md"),
         "protocol_sha256_authorized": authorization["protocol_sha256"],
-        "evidence_ledger_sha256": sha256(project / "EVIDENCE_LEDGER.md"),
+        "evidence_ledger_sha256": sha256(project / "protocol/EVIDENCE_LEDGER.md"),
         "evidence_ledger_sha256_authorized": authorization["evidence_ledger_sha256"],
         "frozen_analysis_sha256": sha256(project / "tools/analyze_confirmation.py"),
         "frozen_analysis_sha256_authorized": authorization["analysis_script_sha256"],

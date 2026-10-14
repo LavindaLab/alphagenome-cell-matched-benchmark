@@ -185,14 +185,24 @@ def figure_1(project):
 def figure_2(project, source):
     utility = read_tsv(project / "confirmation/results/budget_utility.tsv")
     contrasts = read_tsv(project / "manuscript/analysis/budget_precision_contrasts.tsv")
+    controls = project / "manuscript/analysis/context-controls"
+    context_rows = [
+        row for row in read_tsv(controls / "wrong_cell_contrasts.tsv")
+        if int(row["block_size_bp"]) == 1_000_000
+    ]
+    track_rows = [
+        row for row in read_tsv(controls / "single_track_estimates.tsv")
+        if int(row["block_size_bp"]) == 1_000_000 and row["cell_context"] == "confirmation_macro"
+    ]
     macro_rows = []
     for budget in BUDGETS:
         for policy in ("random", "pip", "avi", "magnitude", "concordance"):
             values = [float(row["precision"]) for row in utility if row["cell_context"] in CELLS and int(row["budget"]) == budget and row["policy"] == policy]
             macro_rows.append({"budget": budget, "policy": policy, "macro_precision": np.mean(values)})
     write_tsv(source / "figure_2a_macro_precision.tsv", macro_rows)
-    forest_rows = [row for row in contrasts if int(row["block_size"]) == 1_000_000 and row["comparator"] == "avi" and int(row["budget"]) in (384, 1000)]
-    write_tsv(source / "figure_2bc_cell_contrasts.tsv", forest_rows)
+    write_tsv(source / "figure_2b_context_macro.tsv", [row for row in context_rows if row["cell_context"] == "confirmation_macro"])
+    write_tsv(source / "figure_2c_context_cell_contrasts.tsv", context_rows)
+    write_tsv(source / "figure_2e_single_track_macro.tsv", track_rows)
     yield_rows = []
     for budget in (384, 1000):
         for policy in ("magnitude", "avi"):
@@ -205,9 +215,9 @@ def figure_2(project, source):
     write_tsv(source / "figure_2d_yield.tsv", yield_rows)
 
     drawing = Drawing(WIDTH, HEIGHT)
-    text(drawing, 25, 582, "Cell-matched regulatory scores improve experimental yield", 14, DARK, bold=True)
-    panel(drawing, "A", "Macro emVar precision across frozen assay budgets", 25, 548)
-    left, bottom, width, height = 65, 335, 430, 180
+    text(drawing, 25, 582, "Cell context improves AlphaGenome regulatory-variant prioritization", 13.5, DARK, bold=True)
+    panel(drawing, "A", "Macro emVar precision across fixed assay budgets", 25, 548)
+    left, bottom, width, height = 65, 382, 430, 135
     x_positions = [left + (math.log10(budget) - math.log10(96)) / (math.log10(5000) - math.log10(96)) * width for budget in BUDGETS]
     axes(drawing, left, bottom, width, height, x_positions, [str(x) for x in BUDGETS], 0, 0.85, [0, 0.2, 0.4, 0.6, 0.8], "Precision")
     for policy in ("magnitude", "concordance", "avi", "pip", "random"):
@@ -219,19 +229,72 @@ def figure_2(project, source):
         drawing.add(PolyLine(points, strokeColor=PALETTE[policy], strokeWidth=1.6, fillColor=None))
     for index, policy in enumerate(("magnitude", "concordance", "avi", "pip", "random")):
         x = 70 + index * 88
-        drawing.add(Line(x, 296, x + 13, 296, strokeColor=PALETTE[policy], strokeWidth=2))
-        text(drawing, x + 17, 293, LABELS[policy], 6.2, DARK)
-    text(drawing, 280, 309, "Assay slots per cell (log scale)", 7, DARK, "middle")
+        drawing.add(Line(x, 352, x + 13, 352, strokeColor=PALETTE[policy], strokeWidth=2))
+        text(drawing, x + 17, 349, LABELS[policy], 6.2, DARK)
+    text(drawing, 280, 365, "Assay slots per cell (log scale)", 7, DARK, "middle")
 
-    for label, title, x, budget in (("B", "Cell-matched - AVI, 384 slots", 25, 384), ("C", "Cell-matched - AVI, 1,000 slots", 285, 1000)):
-        panel(drawing, label, title, x, 282)
-        rows = [next(row for row in forest_rows if row["cell_context"] == cell and int(row["budget"]) == budget) for cell in (*CELLS, "confirmation_macro")]
-        forest(drawing, rows, x + 70, 95, 175, 160, 0.0, 0.50, "precision_difference", "ci95_low", "ci95_high", [*CELLS, "Macro"], color=NAVY)
-        text(drawing, x + 158, 73, "Precision difference", 7, DARK, "middle")
+    panel(drawing, "B", "Exact-cell versus nonmatching-context mean", 25, 326)
+    macro_context = [row for row in context_rows if row["cell_context"] == "confirmation_macro"]
+    b_left, b_bottom, b_width, b_height = 55, 170, 195, 125
+    axes(drawing, b_left, b_bottom, b_width, b_height, [], [], 0, 0.75, [0, 0.25, 0.50, 0.75], "Precision")
+    for index, budget in enumerate((384, 1000)):
+        row = next(item for item in macro_context if int(item["budget"]) == budget)
+        center = b_left + b_width * (index + 0.5) / 2
+        for offset, key, color in ((-10, "exact_cell_precision", NAVY), (10, "all_wrong_cell_mean_precision", GRAY)):
+            value = float(row[key])
+            drawing.add(Rect(center + offset - 7, b_bottom, 14, value / 0.75 * b_height, fillColor=color, strokeColor=None))
+        text(drawing, center, b_bottom - 13, f"{budget:,}", 6.5, DARK, "middle")
+    drawing.add(Rect(80, 146, 10, 7, fillColor=NAVY, strokeColor=None)); text(drawing, 95, 146, "Exact cell", 6.4)
+    drawing.add(Rect(150, 146, 10, 7, fillColor=GRAY, strokeColor=None)); text(drawing, 165, 146, "Nonmatching mean", 6.4)
 
-    panel(drawing, "D", "Additional discoveries and hit-containing loci", 25, 52)
-    text(drawing, 55, 32, "384 slots: +417 hits / +367 blocks", 8, NAVY, bold=True)
-    text(drawing, 300, 32, "1,000 slots: +973 hits / +674 blocks", 8, NAVY, bold=True)
+    panel(drawing, "C", "Exact-cell benefit by outcome cell", 285, 326)
+    c_left, c_bottom, c_width, c_height = 365, 170, 145, 125
+    drawing.add(Line(c_left, c_bottom, c_left + c_width, c_bottom, strokeColor=DARK, strokeWidth=0.7))
+    x_zero = c_left
+    drawing.add(Line(x_zero, c_bottom, x_zero, c_bottom + c_height, strokeColor=GRAY, strokeWidth=0.7, strokeDashArray=[2, 2]))
+    for tick in (0, 0.1, 0.2, 0.3, 0.4):
+        x = c_left + tick / 0.42 * c_width
+        drawing.add(Line(x, c_bottom, x, c_bottom - 3, strokeColor=DARK, strokeWidth=0.4))
+        text(drawing, x, c_bottom - 12, f"{tick:.1f}", 6.1, GRAY, "middle")
+    gap = c_height / len(CELLS)
+    for index, cell in enumerate(CELLS):
+        y_center = c_bottom + c_height - gap * (index + 0.5)
+        text(drawing, c_left - 7, y_center - 2, cell, 6.4, DARK, "end")
+        for y_offset, budget, color in ((4, 384, NAVY), (-4, 1000, TEAL)):
+            row = next(item for item in context_rows if item["cell_context"] == cell and int(item["budget"]) == budget)
+            conv = lambda value: c_left + float(value) / 0.42 * c_width
+            y = y_center + y_offset
+            drawing.add(Line(conv(row["ci95_low"]), y, conv(row["ci95_high"]), y, strokeColor=color, strokeWidth=1.1))
+            drawing.add(Circle(conv(row["exact_minus_all_wrong_mean"]), y, 2.2, fillColor=color, strokeColor=color))
+    drawing.add(Line(373, 146, 386, 146, strokeColor=NAVY, strokeWidth=2)); text(drawing, 391, 143, "384", 6.3)
+    drawing.add(Line(435, 146, 448, 146, strokeColor=TEAL, strokeWidth=2)); text(drawing, 453, 143, "1,000", 6.3)
+
+    panel(drawing, "D", "Additional confirmed variants and genomic blocks", 25, 116)
+    text(drawing, 45, 88, "384 slots", 7, GRAY, bold=True)
+    text(drawing, 45, 70, "+417 emVars", 9, NAVY, bold=True)
+    text(drawing, 45, 53, "+367 hit-containing 1 Mb blocks", 6.8, DARK)
+    text(drawing, 165, 88, "1,000 slots", 7, GRAY, bold=True)
+    text(drawing, 165, 70, "+973 emVars", 9, NAVY, bold=True)
+    text(drawing, 165, 53, "+674 hit-containing 1 Mb blocks", 6.8, DARK)
+
+    panel(drawing, "E", "Post hoc single-track macro precision", 285, 116)
+    e_left, e_bottom, e_width, e_height = 325, 42, 180, 46
+    track_order = (("avi", ORANGE), ("dnase_only", PURPLE), ("h3k27ac_only", TEAL), ("combined_magnitude", NAVY))
+    for budget_index, budget in enumerate((384, 1000)):
+        group_y = e_bottom + e_height - budget_index * 30
+        text(drawing, e_left - 8, group_y - 3, f"{budget:,}", 6.2, DARK, "end")
+        for track_index, (score, color) in enumerate(track_order):
+            row = next(item for item in track_rows if int(item["budget"]) == budget and item["score"] == score)
+            value = float(row["precision"])
+            y = group_y - track_index * 5
+            x_end = e_left + value / 0.75 * e_width
+            drawing.add(Line(e_left, y, x_end, y, strokeColor=color, strokeWidth=3))
+            text(drawing, x_end + 3, y - 2, f"{value:.2f}", 5.0, DARK)
+    for index, (score, color) in enumerate(track_order):
+        x = 292 + (index % 2) * 112; y = 25 - (index // 2) * 10
+        drawing.add(Line(x, y, x + 10, y, strokeColor=color, strokeWidth=2.5))
+        label = {"avi": "AVI", "dnase_only": "DNase", "h3k27ac_only": "H3K27ac", "combined_magnitude": "Combined"}[score]
+        text(drawing, x + 14, y - 2.5, label, 5.7, DARK)
     return drawing
 
 
@@ -289,7 +352,7 @@ def figure_3(project, source):
     write_tsv(source / "figure_3e_selective_risk.tsv", risk_source)
 
     drawing = Drawing(WIDTH, HEIGHT)
-    text(drawing, 25, 582, "Disagreement is informative, but concordance is not a better ranking rule", 14, DARK, bold=True)
+    text(drawing, 25, 582, "Disagreement is informative; concordance leaves ranking unimproved", 13.5, DARK, bold=True)
     panel(drawing, "A", "Top-10% rank discordance separates MPRA yield", 25, 548)
     left, bottom, width, height = 70, 355, 420, 160
     y_max = 0.24

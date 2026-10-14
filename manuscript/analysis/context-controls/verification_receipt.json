@@ -1,0 +1,133 @@
+{
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed_by_block_size": {
+    "1000000": 21261008,
+    "5000000": 25261008
+  },
+  "checks": [
+    {
+      "check": "reconstruction_max_identity_all_rows",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "reconstruction_min_identity_all_rows",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "reconstruction_winner_identity_all_rows",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check": "single_track_table_row_count",
+      "expected": 80,
+      "observed": 80,
+      "passed": true
+    },
+    {
+      "check": "single_track_contrast_row_count",
+      "expected": 100,
+      "observed": 100,
+      "passed": true
+    },
+    {
+      "check": "wrong_cell_grid_row_count",
+      "expected": 80,
+      "observed": 80,
+      "passed": true
+    },
+    {
+      "check": "wrong_cell_contrast_row_count",
+      "expected": 20,
+      "observed": 20,
+      "passed": true
+    },
+    {
+      "check": "all_rows_explicitly_post_hoc",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "summary_explicitly_post_hoc",
+      "expected": "post_hoc",
+      "observed": "post_hoc",
+      "passed": true
+    },
+    {
+      "check": "four_by_five_grid_complete",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check": "all_single_track_points_recomputed",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check": "all_wrong_cell_grid_points_recomputed",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check": "combined_and_avi_authoritative_replay",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check": "all_macro_headlines_and_intervals_independently_recomputed",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check": "all_reported_estimates_finite",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    }
+  ],
+  "checks_passed": 15,
+  "checks_total": 15,
+  "database_import_counts": {
+    "avi": 246674,
+    "features": 1233370,
+    "metadata": 246674,
+    "outcomes": 888441,
+    "regions": 246674
+  },
+  "eligible_variants_by_outcome_cell": {
+    "HCT116": 119946,
+    "HepG2": 176396,
+    "K562": 176198,
+    "SK-N-SH": 176100
+  },
+  "failed_checks": [],
+  "identity_validation": {
+    "max_failures": 0,
+    "min_failures": 0,
+    "row_level_sample": {
+      "cell_context": "A549",
+      "concordance_C": 0.7884218692779541,
+      "magnitude_M": 0.8344978094100952,
+      "reconstructed_abs_dnase_quantile": 0.8344978094100952,
+      "reconstructed_abs_h3k27ac_quantile": 0.7884218692779541,
+      "variant_id_hg38": "chr10:100240944:C:T",
+      "winner": "DNASE"
+    },
+    "rows_checked": 1233370,
+    "ties_at_tolerance": 15989,
+    "winner_failures": 0
+  },
+  "passed": true,
+  "verification_role": "independent recomputation from released derived inputs; post hoc controls"
+}

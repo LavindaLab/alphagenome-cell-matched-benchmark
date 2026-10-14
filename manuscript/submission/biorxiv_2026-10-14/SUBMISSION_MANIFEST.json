@@ -1,0 +1,108 @@
+{
+  "ai_disclosure_in_main_pdf": false,
+  "author": "Olga Lavinda",
+  "biorxiv_category": "Genomics",
+  "files": {
+    "AlphaGenome_Cell_Context_bioRxiv_PREPRINT_2026-10-14.pdf": {
+      "bytes": 765958,
+      "sha256": "43383c0318740c2c9d49b43b4bc4eed18054223e7f0e3d678fea121e6f0aae1b"
+    },
+    "AlphaGenome_Supplementary_Methods_and_Results_2026-10-14.pdf": {
+      "bytes": 491156,
+      "sha256": "01b55a77d3802125f7a23dba80ab0b82f4b6a6194540c64ac2797a3899e2c0e2"
+    },
+    "AlphaGenome_bioRxiv_Supplementary_Data_2026-10-14.zip": {
+      "bytes": 38986,
+      "sha256": "1ebc660f63abd4329a483d1a4e5df1e0063bd7f3675edb32fd0505c32721734e"
+    },
+    "S1_fixed_budget_effect_estimates.tsv": {
+      "bytes": 33621,
+      "sha256": "5748fc1981c276e25d3be816befafe6ad6c9e79d3399c5743dfeb6797078996a"
+    },
+    "S2_ranking_metrics.tsv": {
+      "bytes": 1603,
+      "sha256": "e18047bbf3848c409ea916cde0268816a6ba36266955e4cefebce1bf614c7164"
+    },
+    "S3a_avi_context_rank_groups.tsv": {
+      "bytes": 4768,
+      "sha256": "2ef03c6665b75b0be3ee0a68174b558bf31053622119cc1f529cf589b7ce7046"
+    },
+    "S3b_avi_context_rank_contrasts.tsv": {
+      "bytes": 2465,
+      "sha256": "3f1fe11ce8782e9c2e8f859b9446cf6840905a74e3a5d981237824ce95842164"
+    },
+    "S4a_selective_risk_intervals.tsv": {
+      "bytes": 10550,
+      "sha256": "e8d957d9de446f0b117f38c52f0df4adedc865c027e2854af5e2588ac384f750"
+    },
+    "S4b_selective_risk_contrasts.tsv": {
+      "bytes": 5902,
+      "sha256": "a83a8cf1e37bdce827e017267562d093d0d80e97e1d1d31f020c846ef1fa4a9e"
+    },
+    "S5_uncertainty_indicator_models.tsv": {
+      "bytes": 4383,
+      "sha256": "05b26df66dd51735a0abef75c4b8190f6ebb817690776aaaa8ba4d503c4e0159"
+    },
+    "S6_budget_utility.tsv": {
+      "bytes": 9948,
+      "sha256": "0c8ccd6d93c54220b814b0da62ab71f5489e9cea1e0b8089bb7498e653e2b35b"
+    },
+    "S7a_integrity_audit.json": {
+      "bytes": 3087,
+      "sha256": "8d61e364167c307b37bd6fe26e0b54c2efd62a72230d4a2fe46ebe751989259e"
+    },
+    "S7b_analysis_inspection_receipt.json": {
+      "bytes": 250,
+      "sha256": "fad964d3f0b3c131c8ad99d2561d9fa29e9bf072c68258d401efa1d0c91dd532"
+    },
+    "S7c_package_inspection_receipt.json": {
+      "bytes": 463,
+      "sha256": "89833faba9f11660abf03b80fcfc07b7ef968f65ecba88a875fababe122bfeca"
+    },
+    "S8a_wrong_cell_grid.tsv": {
+      "bytes": 8806,
+      "sha256": "05f2c50197833ce0b0312d093336024dfe0c376431250cef49110b46f9505dda"
+    },
+    "S8b_wrong_cell_contrasts.tsv": {
+      "bytes": 3205,
+      "sha256": "20417c3031ed22d03e9a1d35529284de3d13750db3b0684b59734059b28a2359"
+    },
+    "S9a_single_track_estimates.tsv": {
+      "bytes": 9828,
+      "sha256": "f010a786d12786694d868a5c7c3486db285c3538c1a042189bd8ab871da8ed5e"
+    },
+    "S9b_single_track_contrasts.tsv": {
+      "bytes": 17112,
+      "sha256": "75e62b91d10f338cb3278d8b9d96b86a1ccfcb0d49ea99f8335eefb58b145c34"
+    },
+    "S9c_context_control_verification_receipt.json": {
+      "bytes": 3097,
+      "sha256": "c734a7a2ed2eb36b48fcee7e85cec6bbd20a3221ab997671758bd128e7604798"
+    }
+  },
+  "generated_utc": "2026-10-14T22:34:28.697923+00:00",
+  "license_selection": "CC BY 4.0",
+  "main_pdf_pages": 12,
+  "prepared_revision_date": "2026-10-14",
+  "repository_release_required_before_submission": true,
+  "source_commit_base": "d4ac41b345b69bb6f1ec5324699f9f7e3c96bcc7",
+  "supplement_pdf_pages": 6,
+  "supplementary_tables": [
+    "S1_fixed_budget_effect_estimates.tsv",
+    "S2_ranking_metrics.tsv",
+    "S3a_avi_context_rank_groups.tsv",
+    "S3b_avi_context_rank_contrasts.tsv",
+    "S4a_selective_risk_intervals.tsv",
+    "S4b_selective_risk_contrasts.tsv",
+    "S5_uncertainty_indicator_models.tsv",
+    "S6_budget_utility.tsv",
+    "S7a_integrity_audit.json",
+    "S7b_analysis_inspection_receipt.json",
+    "S7c_package_inspection_receipt.json",
+    "S8a_wrong_cell_grid.tsv",
+    "S8b_wrong_cell_contrasts.tsv",
+    "S9a_single_track_estimates.tsv",
+    "S9b_single_track_contrasts.tsv",
+    "S9c_context_control_verification_receipt.json"
+  ]
+}

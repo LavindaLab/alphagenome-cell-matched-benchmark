@@ -10,7 +10,7 @@
 	</clipPath>
 	<g id="group" transform="scale(1,-1) translate(0,-610)" style="clip-path: url(#clip)">
 		<g transform="">
-			<text x="25" y="582" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1164) scale(1,-1)">Disagreement is informative, but concordance is not a better ranking rule</text>
+			<text x="25" y="582" style="font-family: Helvetica-Bold; font-size: 13.5px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1164) scale(1,-1)">Disagreement is informative; concordance leaves ranking unimproved</text>
 			<text x="25" y="548" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1096) scale(1,-1)">A</text>
 			<text x="43" y="548" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(12%,16%,21%); stroke:none;" transform="translate(0,1096) scale(1,-1)">Top-10% rank discordance separates MPRA yield</text>
 			<path d="M 70,355 L 70,515 Z" style="stroke: rgb(12%,16%,21%); stroke-linecap: butt; stroke-width: 0.7;"/>

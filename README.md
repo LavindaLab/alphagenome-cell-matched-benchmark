@@ -1,15 +1,16 @@
-# Cell-matched AlphaGenome benchmark
+# Cell-context matching AlphaGenome benchmark
 
 Public reproducibility package for:
 
-> Olga Lavinda. *Cell-matched AlphaGenome predictions improve experimental variant prioritization over a global impact score.*
+> Olga Lavinda. *Cell-context matching improves AlphaGenome prioritization of experimentally active regulatory variants.*
 
 This repository preserves the frozen protocol, outcome-access records, analysis code, row-level derived analysis tables, aggregate results, figure source data, and claim-to-artifact mapping used by the manuscript.
 
 ## Primary entry points
 
+- `SCREENING_README.md`: concise screener-facing overview and reproduction guide.
 - `manuscript/MANUSCRIPT.md`: author manuscript source.
-- `manuscript/AlphaGenome_Cell_Matched_bioRxiv_PREPRINT_2026-09-16.pdf`: rendered preprint.
+- `manuscript/submission/biorxiv_2026-10-14/AlphaGenome_Cell_Context_bioRxiv_PREPRINT_2026-10-14.pdf`: revised submission PDF.
 - `manuscript/CLAIMS_EVIDENCE_TABLE.tsv`: claim-level evidence map.
 - `protocol/PROTOCOL_v0.1.md`: frozen study protocol.
 - `confirmation/CONFIRMATION_PREQUERY_FREEZE_2026-09-13.md`: confirmation query freeze.
@@ -19,6 +20,7 @@ This repository preserves the frozen protocol, outcome-access records, analysis 
 - `confirmation/mpra_outcomes_confirmation.tsv.gz`: confirmation-set MPRA outcomes derived from the cited source dataset.
 - `confirmation/results/confirmation_results.json`: frozen confirmatory result record.
 - `manuscript/analysis/`: manuscript-level analyses and integrity audit.
+- `manuscript/analysis/context-controls/`: post hoc exact-cell, nonmatching-context and single-track controls.
 - `tools/`: retrieval, processing, analysis, verification, and figure scripts.
 
 ## Reproduction boundary
@@ -39,11 +41,16 @@ python3 tools/verify_confirmation_results.py \
   confirmation/results/inspection_receipt.reproduced.json
 ```
 
-The immutable release corresponding to the preprint upload is tagged `v1.0.1-biorxiv`. File hashes are recorded in `SHA256SUMS.txt` and the release manifest.
+The post hoc context controls can be checked with:
+
+```bash
+python3 tools/verify_context_controls.py
+```
+
+The earlier submitted version is tagged `v1.0.1-biorxiv`. The revised package is versioned as `v1.1.0-biorxiv` and adds the exact-cell versus nonmatching-context control, the DNase-only and H3K27ac-only controls, and an updated Figure 2.
 
 ## External source records
 
 - Siraj MPRA article and supplementary data: https://doi.org/10.1038/s41586-026-10121-6
 - IGVF ADASTRA release: https://data.igvf.org/reference-files/IGVFFI5943XCOS/
 - AlphaGenome software and access documentation: https://github.com/google-deepmind/alphagenome
-

@@ -36,10 +36,10 @@ from reportlab.platypus import (
 
 PROJECT = Path(__file__).resolve().parents[1]
 MANUSCRIPT = PROJECT / "manuscript"
-OUTPUT = MANUSCRIPT / "submission" / "biorxiv_2026-09-14"
-MAIN_STEM = "AlphaGenome_Cell_Matched_bioRxiv_PREPRINT_2026-09-14"
-SUPP_STEM = "AlphaGenome_Supplementary_Methods_and_Results_2026-09-14"
-DATA_STEM = "AlphaGenome_bioRxiv_Minimal_SI_2026-09-14"
+OUTPUT = MANUSCRIPT / "submission" / "biorxiv_2026-10-14"
+MAIN_STEM = "AlphaGenome_Cell_Context_bioRxiv_PREPRINT_2026-10-14"
+SUPP_STEM = "AlphaGenome_Supplementary_Methods_and_Results_2026-10-14"
+DATA_STEM = "AlphaGenome_bioRxiv_Supplementary_Data_2026-10-14"
 
 FONT_DIR = Path("/System/Library/Fonts/Supplemental")
 FONT_FILES = {
@@ -265,7 +265,7 @@ def markdown_story(path: Path, *, supplement: bool = False) -> list:
         line = raw.strip()
         if not line:
             continue
-        if line.startswith("## Figure legends"):
+        if line.lower().startswith("## ") and line.lower().endswith("figure legends"):
             skip_legends = True
             continue
         if skip_legends and line.startswith("## References"):
@@ -308,12 +308,19 @@ def parse_captions() -> dict[str, tuple[str, str]]:
     current: str | None = None
     title = ""
     body: list[str] = []
-    for raw in (MANUSCRIPT / "FIGURE_CAPTIONS.md").read_text(encoding="utf-8").splitlines():
-        match = re.match(r"## (Figure \d+|Supplementary Figure S\d+) \| (.+)", raw)
+    caption_text = "\n".join(
+        path.read_text(encoding="utf-8")
+        for path in (MANUSCRIPT / "MANUSCRIPT.md", MANUSCRIPT / "SUPPLEMENTARY_METHODS_RESULTS.md")
+    )
+    for raw in caption_text.splitlines():
+        match = re.match(r"#{2,3} (Figure \d+|Supplementary Figure S\d+) \| (.+)", raw)
         if match:
             if current is not None:
                 captions[current] = (title, " ".join(body).strip())
             current, title, body = match.group(1), match.group(2), []
+        elif current is not None and (raw.startswith("# ") or raw.startswith("## ") or raw.startswith("### ")):
+            captions[current] = (title, " ".join(body).strip())
+            current, title, body = None, "", []
         elif current is not None and raw.strip():
             body.append(raw.strip())
     if current is not None:
@@ -356,10 +363,10 @@ def build_pdf(
     title = title or (
         "Supplementary methods and results"
         if supplement
-        else "Cell-matched AlphaGenome predictions improve experimental variant prioritization over a global impact score"
+        else "Cell-context matching improves AlphaGenome prioritization of experimentally active regulatory variants"
     )
     short_title = short_title or (
-        "AlphaGenome supplementary information" if supplement else "Cell-matched AlphaGenome variant prioritization"
+        "AlphaGenome supplementary information" if supplement else "Cell-context matching for AlphaGenome prioritization"
     )
     subject = subject or ("Supplementary information" if supplement else "Genomics preprint")
     story = markdown_story(source, supplement=supplement)
@@ -386,6 +393,11 @@ TABLE_FILES = {
     "S7a_integrity_audit.json": MANUSCRIPT / "analysis/integrity_audit.json",
     "S7b_analysis_inspection_receipt.json": MANUSCRIPT / "analysis/inspection_receipt.json",
     "S7c_package_inspection_receipt.json": MANUSCRIPT / "PACKAGE_INSPECTION_RECEIPT.json",
+    "S8a_wrong_cell_grid.tsv": MANUSCRIPT / "analysis/context-controls/wrong_cell_grid.tsv",
+    "S8b_wrong_cell_contrasts.tsv": MANUSCRIPT / "analysis/context-controls/wrong_cell_contrasts.tsv",
+    "S9a_single_track_estimates.tsv": MANUSCRIPT / "analysis/context-controls/single_track_estimates.tsv",
+    "S9b_single_track_contrasts.tsv": MANUSCRIPT / "analysis/context-controls/single_track_contrasts.tsv",
+    "S9c_context_control_verification_receipt.json": MANUSCRIPT / "analysis/context-controls/verification_receipt.json",
 }
 
 REPRODUCIBILITY_FILES = {
@@ -424,11 +436,11 @@ CODE_NAMES = (
 def supplementary_readme() -> str:
     return """# Supplementary Data 1
 
-This archive supports the preprint “Cell-matched AlphaGenome predictions improve experimental variant prioritization over a global impact score.”
+This archive supports the preprint “Cell-context matching improves AlphaGenome prioritization of experimentally active regulatory variants.”
 
 ## Contents
 
-- `Supplementary_Tables/`: frozen machine-readable Supplementary Tables S1-S7.
+- `Supplementary_Tables/`: machine-readable Supplementary Tables S1-S9. Tables S8-S9 report post hoc controls.
 
 ## Access boundary
 
@@ -483,11 +495,7 @@ def build_supplementary_archive(output_zip: Path, table_output: Path) -> None:
 
 
 def preprint_text(source: str) -> str:
-    old = "Supplementary Data 1 contains the frozen protocol, pre-outcome evidence ledger, outcome-firewall records, processing and analysis scripts, aggregate results, figure source data, software records and inspection receipts. Supplementary Tables S1–S7 are supplied as machine-readable files."
-    new = "Supplementary Methods and Results contains supporting analyses and Supplementary Figures S1–S3. Supplementary Data 1 contains machine-readable Supplementary Tables S1–S7."
-    if old not in source:
-        raise RuntimeError("Expected full-package availability text is missing")
-    return source.replace(old, new, 1)
+    return source
 
 
 def main() -> None:
@@ -496,7 +504,7 @@ def main() -> None:
     main_pdf = OUTPUT / f"{MAIN_STEM}.pdf"
     supplement_pdf = OUTPUT / f"{SUPP_STEM}.pdf"
     archive = OUTPUT / f"{DATA_STEM}.zip"
-    tables = OUTPUT / "Supplementary_Tables_S1-S7"
+    tables = OUTPUT / "Supplementary_Tables_S1-S9"
 
     main_md = OUTPUT / f"{MAIN_STEM}.md"
     main_md.write_text(preprint_text((MANUSCRIPT / "MANUSCRIPT.md").read_text(encoding="utf-8")), encoding="utf-8")
@@ -517,25 +525,21 @@ def main() -> None:
     build_supplementary_archive(archive, tables)
 
     shutil.copy2(MANUSCRIPT / "SUPPLEMENTARY_METHODS_RESULTS.md", OUTPUT / f"{SUPP_STEM}.md")
-    shutil.copy2(
-        MANUSCRIPT / "BIOXRIV_SUBMISSION_DETAILS_2026-09-14.md",
-        OUTPUT / "BIOXRIV_SUBMISSION_DETAILS_2026-09-14.md",
-    )
-
     source_commit = subprocess.run(
         ["git", "rev-parse", "HEAD"], cwd=PROJECT, check=True, capture_output=True, text=True
     ).stdout.strip()
     deliverables = [main_pdf, supplement_pdf, archive, *sorted(tables.iterdir())]
     manifest = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "source_commit": source_commit,
+        "source_commit_base": source_commit,
+        "prepared_revision_date": "2026-10-14",
+        "repository_release_required_before_submission": True,
         "main_pdf_pages": len(PdfReader(str(main_pdf)).pages),
         "supplement_pdf_pages": len(PdfReader(str(supplement_pdf)).pages),
         "author": "Olga Lavinda",
         "biorxiv_category": "Genomics",
         "license_selection": "CC BY 4.0",
         "ai_disclosure_in_main_pdf": False,
-        "health_ai_disclosure_in_main_pdf": False,
         "supplementary_tables": sorted(TABLE_FILES),
         "files": {path.name: {"bytes": path.stat().st_size, "sha256": sha256(path)} for path in deliverables},
     }
