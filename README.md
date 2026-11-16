@@ -48,7 +48,7 @@ The post hoc context controls can be checked with:
 python3 tools/verify_context_controls.py
 ```
 
-The earlier submitted version is tagged `v1.0.1-biorxiv`. The revised package is versioned as `v1.1.0-biorxiv` and adds the exact-cell versus nonmatching-context control, the DNase-only and H3K27ac-only controls, and an updated Figure 2.
+Release `v1.0.1-biorxiv` contains the confirmatory analysis. Release `v1.1.0-biorxiv` adds the two post hoc controls: the comparison of predictions for the assayed cell line with predictions for the other cell lines, and the rankings by DNase alone and by H3K27ac alone. The current manuscript text and figures were revised on 16 November 2026; results and source data are unchanged from `v1.1.0-biorxiv`. The benchmark dataset is archived at Zenodo: https://doi.org/10.5281/zenodo.23003991.
 
 ## External source records
 
