@@ -1,48 +1,25 @@
-# AlphaGenome cell-context screening package
+# Overview of the study
 
-This package tests a biological design question: when the experiment is a
-cell-specific MPRA, does matching AlphaGenome regulatory predictions to the
-assayed cell line improve the recovery of expression-modulating variants? A
-prespecified comparison evaluates exact-cell DNase/H3K27ac ranking against the
-global AlphaGenome Variant Impact score (AVI). Post hoc controls hold the score
-fixed while changing prediction context and separate DNase from H3K27ac.
+This study asks a practical question for anyone designing a reporter assay in a particular cell line: should candidate variants be ranked by the AlphaGenome global impact score (AVI), or by the AlphaGenome regulatory predictions for the cell line that will be assayed?
 
 ## What was evaluated
 
-The independent outcome is the Siraj et al. MPRA: an expression-modulating
-variant (emVar) is an active element with significant allelic skew at the
-source study's FDR threshold. The confirmation analysis covers 246,674
-noncoding SNVs with complete derived predictions across five matched cell
-contexts. HepG2, K562, HCT116, and SK-N-SH are the prespecified confirmatory
-cells; A549 is descriptive under the prespecified event-count rule.
+The outcome is the massively parallel reporter assay of Siraj et al. An expression-modulating variant (emVar) is an element with reporter activity and a significant difference between alleles at the source study's false discovery rate threshold. The analysis covers 246,674 noncoding single-nucleotide variants with predictions for five cell lines. HepG2, K562, HCT116 and SK-N-SH form the confirmatory analysis, and A549 is reported descriptively.
 
-The prespecified primary endpoint failed. At 10% coverage among enhancer-active emVars,
-sign-concordance had a four-cell macro sign-error difference of +0.00637
-relative to magnitude ranking (concordance minus magnitude; 1-Mb block-bootstrap
-95% CI, −0.00040 to 0.01168). The interval includes zero and the point
-estimate is below the prespecified practical-importance threshold. This package
-therefore does not support a general concordance advantage for MPRA direction.
+Two questions were fixed before the held-out outcomes were examined.
 
-The prespecified secondary endpoint is experimental yield under fixed
-screening budgets. Cell-matched magnitude ranking outperformed AVI in every
-confirmatory context:
+The first, designated primary, was whether requiring the DNase and H3K27ac predictions to agree in sign reduces error in predicting the direction of a variant's effect. It did not: at 10% coverage the mean error rate was 0.64 percentage points higher with the agreement requirement (95% confidence interval, -0.04 to 1.17). Agreement did identify variants more likely to be active.
 
-| Budget per cell | Cell-matched precision | AVI precision | Difference (95% CI) | Additional emVars |
+The second was whether ranking by the predictions for the assayed cell line returns more reporter-active variants than ranking by AVI at a fixed assay budget. It did, in every confirmatory cell line:
+
+| Assay slots per cell line | Matched predictions | AVI | Difference (95% CI) | Additional emVars |
 | ---: | ---: | ---: | ---: | ---: |
-| 384 | 0.647786 | 0.376302 | 0.271484 (0.229340, 0.312221) | 417 |
-| 1,000 | 0.562500 | 0.319250 | 0.243250 (0.218678, 0.268218) | 973 |
+| 384 | 64.8% | 37.6% | 27.1 points (22.9 to 31.2) | 417 |
+| 1,000 | 56.3% | 31.9% | 24.3 points (21.9 to 26.8) | 973 |
 
-The post hoc context control ranked the same candidate sets with the same
-combined score computed in five cellular contexts. Exact-cell mean precision
-was 0.6478 versus 0.4723 for the fixed mean of four nonmatching contexts at 384
-slots (difference 0.1755; 1 Mb 95% CI, 0.1535–0.1967) and 0.5625 versus 0.4124
-at 1,000 slots (difference 0.1501; 0.1375–0.1621). The difference was positive
-in all four outcome cells, with the smallest effect in SK-N-SH. A post hoc
-single-track control found similar macro performance for H3K27ac alone and the
-combined score at both budgets, while DNase alone was lower. These controls do
-not alter the prespecified primary result or secondary AVI comparison.
+Two controls were added after these results were known and are labeled post hoc. The first ranked the same candidates with the same score computed from the predictions for each of the five cell lines. Predictions for the assayed cell line outperformed the mean of the other cell lines by 17.5 points at 384 slots (15.3 to 19.7) and 15.0 points at 1,000 (13.7 to 16.2), with the smallest gain in SK-N-SH. The second ranked by DNase alone and by H3K27ac alone: H3K27ac alone gave similar point estimates to the combined score, and DNase alone was lower.
 
-## Exact reproduction boundary
+## What can be rerun from this repository
 
 The repository contains the frozen protocol, analysis code, row-level derived
 prediction and outcome tables, aggregate result tables, and verification

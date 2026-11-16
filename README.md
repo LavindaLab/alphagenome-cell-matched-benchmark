@@ -1,16 +1,17 @@
-# Cell-context matching AlphaGenome benchmark
+# AlphaGenome cell specific prediction benchmark
 
 Public reproducibility package for:
 
-> Olga Lavinda. *Cell-context matching improves AlphaGenome prioritization of experimentally active regulatory variants.*
+> Olga Lavinda. *Cell Specific AlphaGenome Predictions Outperform the Global Impact Score in a Massively Parallel Reporter Assay Benchmark of Noncoding Variants.*
 
-This repository preserves the frozen protocol, outcome-access records, analysis code, row-level derived analysis tables, aggregate results, figure source data, and claim-to-artifact mapping used by the manuscript.
+This repository provides the study protocol, analysis code, derived data tables, aggregate results and figure source data used by the manuscript. The protocol and analysis rules were fixed before the held-out outcomes were examined, and the records of that sequence are included.
 
 ## Primary entry points
 
-- `SCREENING_README.md`: concise screener-facing overview and reproduction guide.
+- `SCREENING_README.md`: short overview of the study and how to rerun the analysis.
 - `manuscript/MANUSCRIPT.md`: author manuscript source.
-- `manuscript/submission/biorxiv_2026-10-14/AlphaGenome_Cell_Context_bioRxiv_PREPRINT_2026-10-14.pdf`: revised submission PDF.
+- `manuscript/submission/biorxiv_2026-11-16/Lavinda_Manuscript.pdf`: current manuscript PDF.
+- `manuscript/submission/biorxiv_2026-10-14/`: earlier version of the manuscript.
 - `manuscript/CLAIMS_EVIDENCE_TABLE.tsv`: claim-level evidence map.
 - `protocol/PROTOCOL_v0.1.md`: frozen study protocol.
 - `confirmation/CONFIRMATION_PREQUERY_FREEZE_2026-09-13.md`: confirmation query freeze.

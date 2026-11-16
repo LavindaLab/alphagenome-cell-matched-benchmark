@@ -27,20 +27,20 @@ NAVY = colors.HexColor("#24476B")
 ORANGE = colors.HexColor("#D9792B")
 TEAL = colors.HexColor("#2A9D8F")
 PURPLE = colors.HexColor("#7251A4")
-GRAY = colors.HexColor("#6B7280")
-LIGHT = colors.HexColor("#E5E7EB")
-DARK = colors.HexColor("#1F2937")
+GRAY = colors.HexColor("#374151")
+LIGHT = colors.HexColor("#C4C9D1")
+DARK = colors.HexColor("#111827")
 RED = colors.HexColor("#B24A4A")
 PALETTE = {
     "magnitude": NAVY,
     "avi": ORANGE,
     "pip": PURPLE,
-    "random": GRAY,
+    "random": colors.HexColor("#8E96A3"),
     "concordance": TEAL,
     "concordance_block_cap": RED,
 }
 LABELS = {
-    "magnitude": "Cell-matched",
+    "magnitude": "Matched cell line",
     "avi": "AVI",
     "pip": "PIP",
     "random": "Random",
@@ -124,62 +124,42 @@ def forest(drawing, rows, left, bottom, width, height, x_min, x_max, value_key, 
 
 
 def figure_1(project):
-    drawing = Drawing(WIDTH, HEIGHT)
-    text(drawing, 25, 582, "Independent, outcome-blind evaluation of AlphaGenome Atlas", 14, DARK, bold=True)
-    panel(drawing, "A", "Frozen evaluation workflow", 25, 548)
-    boxes = [
-        ("Siraj MPRA", "304,278 variants"),
-        ("Coordinate/QC", "246,674 held-out SNVs"),
-        ("Atlas retrieval", "5 exact cell contexts"),
-        ("Prediction freeze", "outcomes inaccessible"),
-        ("Held-out analysis", "rules unchanged"),
-    ]
-    x_positions = [25, 130, 235, 340, 445]
-    for index, ((title, subtitle), x) in enumerate(zip(boxes, x_positions, strict=True)):
-        drawing.add(Rect(x, 475, 84, 45, rx=4, ry=4, fillColor=colors.white, strokeColor=NAVY, strokeWidth=1))
-        text(drawing, x + 42, 502, title, 7.2, NAVY, "middle", True)
-        text(drawing, x + 42, 486, subtitle, 6.2, GRAY, "middle")
-        if index < len(boxes) - 1:
-            drawing.add(Line(x + 84, 497, x + 101, 497, strokeColor=GRAY, strokeWidth=1))
-            drawing.add(Line(x + 97, 500, x + 101, 497, strokeColor=GRAY, strokeWidth=1))
-            drawing.add(Line(x + 97, 494, x + 101, 497, strokeColor=GRAY, strokeWidth=1))
+    W, H = WIDTH, 560
+    NAVY1=colors.HexColor("#163A5F"); GRAY1=colors.HexColor("#374151"); LIGHT1=colors.HexColor("#9CA3AF"); DARK1=colors.HexColor("#111827"); TEAL1=colors.HexColor("#0F766E"); PALE=colors.HexColor("#EEF1F5")
+    d=Drawing(W,H)
+    def t(x,y,v,size=8,color=DARK1,anchor="start",bold=False):
+        d.add(String(x,y,str(v),fontName="Helvetica-Bold" if bold else "Helvetica",fontSize=size,fillColor=color,textAnchor=anchor))
+    def panel(label,title,x,y): t(x,y,label,11,DARK1,bold=True); t(x+18,y,title,9,DARK1,bold=True)
 
-    panel(drawing, "B", "Exact-context evaluation and frozen roles", 25, 435)
-    cells = [
-        ("A549", "EFO:0001086", "descriptive", "2,249"),
-        ("HepG2", "EFO:0001187", "confirmatory", "13,045"),
-        ("K562", "EFO:0002067", "confirmatory", "15,809"),
-        ("HCT116", "EFO:0002824", "confirmatory", "5,866"),
-        ("SK-N-SH", "EFO:0003072", "confirmatory", "13,762"),
-    ]
-    headers = ["MPRA cell", "Atlas ontology", "role", "directional n"]
-    columns = [35, 145, 285, 430]
-    for x, header in zip(columns, headers, strict=True):
-        text(drawing, x, 405, header, 7, GRAY, bold=True)
-    for index, values in enumerate(cells):
-        y = 382 - index * 28
-        if index % 2 == 0:
-            drawing.add(Rect(25, y - 8, 490, 22, fillColor=colors.HexColor("#F7F8FA"), strokeColor=None))
-        for x, value in zip(columns, values, strict=True):
-            text(drawing, x, y, value, 7.5, DARK)
+    panel("A","Evaluation workflow",25,535)
+    boxes=[("Reporter assay","MPRA, 304,278 variants","5 human cell lines"),("Variant filtering","246,674 noncoding","SNVs retained"),("AlphaGenome Atlas","DNase, H3K27ac and","AVI for each cell line"),("Ranking rules fixed","before held-out","outcomes examined"),("Held-out comparison","hits per assay budget","and direction error")]
+    xs=[25,130,235,340,445]
+    for i,((a,b,c),x) in enumerate(zip(boxes,xs)):
+        d.add(Rect(x,455,88,56,rx=4,ry=4,fillColor=colors.white,strokeColor=NAVY1,strokeWidth=1.4))
+        t(x+44,492,a,8.2,NAVY1,"middle",True); t(x+44,477,b,7.4,GRAY1,"middle"); t(x+44,467,c,7.4,GRAY1,"middle")
+        if i<4:
+            d.add(Line(x+88,483,x+103,483,strokeColor=GRAY1,strokeWidth=1.3)); d.add(Line(x+99,486,x+103,483,strokeColor=GRAY1,strokeWidth=1.3)); d.add(Line(x+99,480,x+103,483,strokeColor=GRAY1,strokeWidth=1.3))
 
-    panel(drawing, "C", "Integrity and independence checks", 25, 225)
-    checks = [
-        ("Atlas completeness", "246,674 / 246,674", TEAL),
-        ("Prediction inspection", "273 / 273 checks", TEAL),
-        ("Frozen-result inspection", "25 / 25 checks", TEAL),
-        ("Manuscript analysis inspection", "100 / 100 checks", TEAL),
-        ("Gate outcomes in confirmation", "0", NAVY),
-        ("Duplicate variant-cell rows", "0", NAVY),
-    ]
-    for index, (label, value, color) in enumerate(checks):
-        row = index // 2; col = index % 2
-        x = 30 + col * 255; y = 183 - row * 52
-        drawing.add(Rect(x, y, 230, 36, rx=3, ry=3, fillColor=colors.HexColor("#F7F8FA"), strokeColor=LIGHT))
-        text(drawing, x + 10, y + 22, label, 7, GRAY)
-        text(drawing, x + 220, y + 12, value, 9, color, "end", True)
-    text(drawing, 25, 18, "All policy definitions, thresholds and outcomes were frozen before held-out outcome access.", 7.2, GRAY)
-    return drawing
+    panel("B","Cell lines, AlphaGenome ontology term and role in the analysis",25,420)
+    cols=[35,120,225,330,440]
+    for x,h in zip(cols,["MPRA cell line","Atlas ontology term","role","candidate variants","enhancer-active emVars"]): t(x,395,h,8.2,GRAY1,bold=True)
+    rows=[("A549","EFO:0001086","descriptive","–","2,249"),("HepG2","EFO:0001187","confirmatory","176,396","13,045"),("K562","EFO:0002067","confirmatory","176,198","15,809"),("HCT116","EFO:0002824","confirmatory","119,946","5,866"),("SK-N-SH","EFO:0003072","confirmatory","176,100","13,762")]
+    for i,r in enumerate(rows):
+        y=372-i*26
+        if i%2==0: d.add(Rect(25,y-8,490,21,fillColor=PALE,strokeColor=None))
+        for x,v in zip(cols,r): t(x,y,v,8.7,DARK1)
+
+    panel("C","Variant filtering in the held-out genomic blocks",25,225)
+    d.add(Rect(30,170,150,36,rx=3,ry=3,fillColor=PALE,strokeColor=LIGHT1)); t(40,192,"Single-nucleotide variants",8.2,GRAY1); t(170,178,"255,148",9,NAVY1,"end",True)
+    d.add(Rect(360,170,150,36,rx=3,ry=3,fillColor=PALE,strokeColor=LIGHT1)); t(370,192,"Retained for analysis",8.2,GRAY1); t(500,178,"246,674",9,TEAL1,"end",True)
+    d.add(Line(180,188,360,188,strokeColor=GRAY1,strokeWidth=1.3)); d.add(Line(355,191,360,188,strokeColor=GRAY1,strokeWidth=1.3)); d.add(Line(355,185,360,188,strokeColor=GRAY1,strokeWidth=1.3))
+    d.add(Line(270,188,270,150,strokeColor=GRAY1,strokeWidth=1.3))
+    t(190,138,"Excluded",8.2,GRAY1,bold=True)
+    ex=[("coding or essential splice site","6,723"),("hg38 reference-allele mismatch","1,639"),("unmapped or nonunique coordinate conversion","83"),("overlap with earlier AlphaGenome benchmarks or examples","17"),("nonprimary mapping","12")]
+    for i,(a,b) in enumerate(ex):
+        y=122-i*15; t(190,y,a,8.2,DARK1); t(430,y,b,8.7,DARK1,"end")
+    t(25,22,"emVar, expression-modulating variant; AVI, AlphaGenome Variant Impact score.",8.0,GRAY1)
+    return d
 
 
 def figure_2(project, source):
@@ -215,8 +195,8 @@ def figure_2(project, source):
     write_tsv(source / "figure_2d_yield.tsv", yield_rows)
 
     drawing = Drawing(WIDTH, HEIGHT)
-    text(drawing, 25, 582, "Cell context improves AlphaGenome regulatory-variant prioritization", 13.5, DARK, bold=True)
-    panel(drawing, "A", "Macro emVar precision across fixed assay budgets", 25, 548)
+    pass  # headline moved to the legend
+    panel(drawing, "A", "Four-cell mean emVar precision across assay budgets", 25, 548)
     left, bottom, width, height = 65, 382, 430, 135
     x_positions = [left + (math.log10(budget) - math.log10(96)) / (math.log10(5000) - math.log10(96)) * width for budget in BUDGETS]
     axes(drawing, left, bottom, width, height, x_positions, [str(x) for x in BUDGETS], 0, 0.85, [0, 0.2, 0.4, 0.6, 0.8], "Precision")
@@ -233,21 +213,21 @@ def figure_2(project, source):
         text(drawing, x + 17, 349, LABELS[policy], 6.2, DARK)
     text(drawing, 280, 365, "Assay slots per cell (log scale)", 7, DARK, "middle")
 
-    panel(drawing, "B", "Exact-cell versus nonmatching-context mean", 25, 326)
+    panel(drawing, "B", "Matched cell line versus other cell lines", 25, 326)
     macro_context = [row for row in context_rows if row["cell_context"] == "confirmation_macro"]
     b_left, b_bottom, b_width, b_height = 55, 170, 195, 125
     axes(drawing, b_left, b_bottom, b_width, b_height, [], [], 0, 0.75, [0, 0.25, 0.50, 0.75], "Precision")
     for index, budget in enumerate((384, 1000)):
         row = next(item for item in macro_context if int(item["budget"]) == budget)
         center = b_left + b_width * (index + 0.5) / 2
-        for offset, key, color in ((-10, "exact_cell_precision", NAVY), (10, "all_wrong_cell_mean_precision", GRAY)):
+        for offset, key, color in ((-10, "exact_cell_precision", NAVY), (10, "all_wrong_cell_mean_precision", colors.HexColor("#8E96A3"))):
             value = float(row[key])
             drawing.add(Rect(center + offset - 7, b_bottom, 14, value / 0.75 * b_height, fillColor=color, strokeColor=None))
         text(drawing, center, b_bottom - 13, f"{budget:,}", 6.5, DARK, "middle")
-    drawing.add(Rect(80, 146, 10, 7, fillColor=NAVY, strokeColor=None)); text(drawing, 95, 146, "Exact cell", 6.4)
-    drawing.add(Rect(150, 146, 10, 7, fillColor=GRAY, strokeColor=None)); text(drawing, 165, 146, "Nonmatching mean", 6.4)
+    drawing.add(Rect(80, 146, 10, 7, fillColor=NAVY, strokeColor=None)); text(drawing, 95, 146, "Matched cell line", 6.4)
+    drawing.add(Rect(150, 146, 10, 7, fillColor=colors.HexColor("#8E96A3"), strokeColor=None)); text(drawing, 165, 146, "Other cell lines (mean)", 6.4)
 
-    panel(drawing, "C", "Exact-cell benefit by outcome cell", 285, 326)
+    panel(drawing, "C", "Gain from matched predictions", 285, 326)
     c_left, c_bottom, c_width, c_height = 365, 170, 145, 125
     drawing.add(Line(c_left, c_bottom, c_left + c_width, c_bottom, strokeColor=DARK, strokeWidth=0.7))
     x_zero = c_left
@@ -277,7 +257,7 @@ def figure_2(project, source):
     text(drawing, 165, 70, "+973 emVars", 9, NAVY, bold=True)
     text(drawing, 165, 53, "+674 hit-containing 1 Mb blocks", 6.8, DARK)
 
-    panel(drawing, "E", "Post hoc single-track macro precision", 285, 116)
+    panel(drawing, "E", "Post hoc single-track mean precision", 285, 116)
     e_left, e_bottom, e_width, e_height = 325, 42, 180, 46
     track_order = (("avi", ORANGE), ("dnase_only", PURPLE), ("h3k27ac_only", TEAL), ("combined_magnitude", NAVY))
     for budget_index, budget in enumerate((384, 1000)):
@@ -352,7 +332,7 @@ def figure_3(project, source):
     write_tsv(source / "figure_3e_selective_risk.tsv", risk_source)
 
     drawing = Drawing(WIDTH, HEIGHT)
-    text(drawing, 25, 582, "Disagreement is informative; concordance leaves ranking unimproved", 13.5, DARK, bold=True)
+    pass  # headline moved to the legend
     panel(drawing, "A", "Top-10% rank discordance separates MPRA yield", 25, 548)
     left, bottom, width, height = 70, 355, 420, 160
     y_max = 0.24
@@ -367,10 +347,10 @@ def figure_3(project, source):
             drawing.add(Rect(x - 6, bottom, 12, y - bottom, fillColor=color, strokeColor=None))
             drawing.add(Line(x, bottom + low / y_max * height, x, bottom + high / y_max * height, strokeColor=DARK, strokeWidth=0.8))
         text(drawing, center, bottom - 13, cell, 6.7, DARK, "middle")
-    drawing.add(Rect(180, 329, 10, 7, fillColor=NAVY, strokeColor=None)); text(drawing, 195, 329, "Cell-matched only", 6.5)
+    drawing.add(Rect(180, 329, 10, 7, fillColor=NAVY, strokeColor=None)); text(drawing, 195, 329, "Matched only", 6.5)
     drawing.add(Rect(290, 329, 10, 7, fillColor=ORANGE, strokeColor=None)); text(drawing, 305, 329, "AVI only", 6.5)
 
-    panel(drawing, "B", "Cell-matched-only minus AVI-only prevalence", 25, 292)
+    panel(drawing, "B", "Matched only minus AVI only prevalence", 25, 292)
     rows = [next(row for row in rank_contrast_source if row["cell_context"] == cell) for cell in (*CELLS, "confirmation_macro")]
     forest(drawing, rows, 100, 110, 160, 150, 0.0, 0.18, "prevalence_difference", "difference_ci95_low", "difference_ci95_high", [*CELLS, "Macro"], color=NAVY)
     text(drawing, 180, 88, "Prevalence difference", 7, DARK, "middle")
@@ -393,7 +373,7 @@ def supplementary_figures(project, source):
     write_tsv(source / "figure_s1_all_cell_budget.tsv", utility)
     drawings = []
     drawing = Drawing(WIDTH, HEIGHT)
-    text(drawing, 25, 582, "Supplementary Figure S1. Frozen policy performance by cell", 13, DARK, bold=True)
+    text(drawing, 25, 582, "Supplementary Figure S1. Ranking policy performance by cell", 13, DARK, bold=True)
     positions = [(25, 325), (285, 325), (25, 70), (285, 70)]
     for panel_index, (cell, (x, y)) in enumerate(zip(CELLS, positions, strict=True)):
         panel(drawing, chr(ord("A") + panel_index), cell, x, y + 220)
@@ -427,7 +407,7 @@ def supplementary_figures(project, source):
     write_tsv(source / "figure_s2_block_sensitivity.tsv", sensitivity)
     drawing = Drawing(WIDTH, HEIGHT)
     text(drawing, 25, 582, "Supplementary Figure S2. Dependence sensitivity", 13, DARK, bold=True)
-    panel(drawing, "A", "Cell-matched - AVI precision by block size", 25, 545)
+    panel(drawing, "A", "Matched minus AVI precision by block size", 25, 545)
     for index, budget in enumerate(BUDGETS):
         y = 490 - index * 80
         text(drawing, 80, y - 2, f"{budget} slots", 7, DARK, "end")
@@ -456,7 +436,7 @@ def supplementary_figures(project, source):
         "h3k27ac_exact_vs_other_direction_disagreement",
         "magnitude_only_vs_avi_only_top10",
     ]
-    short = ["DNase/H3K27ac sign", "Quantile gap (per SD)", "DNase exact/other sign", "H3K27ac exact/other sign", "Cell-matched-only vs AVI-only"]
+    short = ["DNase/H3K27ac sign", "Quantile gap (per SD)", "DNase exact/other sign", "H3K27ac exact/other sign", "Matched only vs AVI only"]
     for panel_index, cell in enumerate(CELLS):
         x = 25 if panel_index % 2 == 0 else 285
         y = 320 if panel_index < 2 else 65
